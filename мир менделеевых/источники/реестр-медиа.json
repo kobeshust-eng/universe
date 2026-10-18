@@ -1,0 +1,71 @@
+[
+  {
+    "id": "01",
+    "path": "медиа/2026-10-17/01-самолёт-васи.png",
+    "title": "Самолёт Васи",
+    "object_ids": [
+      "vasya-plane"
+    ],
+    "original_filename": "Снимок экрана 2026-10-17 в 15.45.50.png",
+    "added": "2026-10-17",
+    "sha256": "e641e1d15b2320ad2f15a52044b9df199dc1f4c8a0077bcd6606041ff8f9ee41"
+  },
+  {
+    "id": "02",
+    "path": "медиа/2026-10-17/02-чёрная-дыра-васи.png",
+    "title": "Чёрная дыра Васи",
+    "object_ids": [
+      "vasya-black-hole"
+    ],
+    "original_filename": "Снимок экрана 2026-10-17 в 15.46.27.png",
+    "added": "2026-10-17",
+    "sha256": "f8b0d3485eb3fa9c474fb106d8e8ee7fb72ba02744454dcab3d01afdf6c4f6de"
+  },
+  {
+    "id": "03",
+    "path": "медиа/2026-10-17/03-питающая-чёрная-дыра-папы.png",
+    "title": "Питающая чёрная дыра папы",
+    "object_ids": [
+      "dad-black-hole"
+    ],
+    "original_filename": "Снимок экрана 2026-10-17 в 15.52.48.png",
+    "added": "2026-10-17",
+    "sha256": "9067373b483d1a90e82cf861392a4a8b9553b904c33db805943aef531a0d878c"
+  },
+  {
+    "id": "04",
+    "path": "медиа/2026-10-17/04-летающий-дом-и-мини-корабль.png",
+    "title": "Летающий дом и мини-корабль папы",
+    "object_ids": [
+      "flying-house",
+      "house-mini-ships"
+    ],
+    "original_filename": "Снимок экрана 2026-10-17 в 15.53.27.png",
+    "added": "2026-10-17",
+    "sha256": "c43f4d35c70e730db3290fe34ee9ad104221071ca5ffa835788a1ff24107a227"
+  },
+  {
+    "id": "05",
+    "path": "медиа/2026-10-17/05-корабль-ильи.png",
+    "title": "Корабль Ильи с питающей чёрной дырой",
+    "object_ids": [
+      "bmw-ultra-77",
+      "bmw-black-hole"
+    ],
+    "original_filename": "Снимок экрана 2026-10-17 в 15.54.08.png",
+    "added": "2026-10-17",
+    "sha256": "f2132177566af43f60252d72664db9787651e9ade19375a86c9b9d6c2f13feaf"
+  },
+  {
+    "id": "06",
+    "path": "медиа/2026-10-17/06-bmw-и-мини-bmw.png",
+    "title": "Концепт BMW и мини-BMW Ильи",
+    "object_ids": [
+      "bmw-ultra-77",
+      "mini-bmw"
+    ],
+    "original_filename": "Снимок экрана 2026-10-17 в 15.54.46.png",
+    "added": "2026-10-17",
+    "sha256": "9cd4f5b5e7572fa133394e42989ae52cae204ed038bc49fe3ddcdbc4b3815e96"
+  }
+]
