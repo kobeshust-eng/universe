@@ -67,5 +67,58 @@
     "original_filename": "Снимок экрана 2026-10-17 в 15.54.46.png",
     "added": "2026-10-17",
     "sha256": "9cd4f5b5e7572fa133394e42989ae52cae204ed038bc49fe3ddcdbc4b3815e96"
+  },
+  {
+    "id": "07",
+    "path": "медиа/2026-10-18/07-bmw-дорисовка.png",
+    "title": "BMW Ultra 77 — дорисовка по рисункам Ильи",
+    "object_ids": [
+      "bmw-ultra-77",
+      "mini-bmw",
+      "bmw-controller",
+      "bmw-black-hole"
+    ],
+    "added": "2026-10-18",
+    "sha256": "25b424eb6dd21f1b929c25abfa5b371e24f6c55053debdb23a75a3d1252130c7",
+    "kind": "illustration",
+    "source_media_ids": [
+      "05",
+      "06"
+    ],
+    "creation_tool": "image_gen",
+    "status": "Художественная версия; новые детали пока не канон"
+  },
+  {
+    "id": "08",
+    "path": "медиа/2026-10-18/08-летающий-дом-дорисовка.png",
+    "title": "Летающий дом — дорисовка по рисунку папы",
+    "object_ids": [
+      "flying-house",
+      "house-mini-ships"
+    ],
+    "added": "2026-10-18",
+    "sha256": "9a409844ed69f73fdb105fb793e456447a0f079267b34452796cef8c0e81c312",
+    "kind": "illustration",
+    "source_media_ids": [
+      "04"
+    ],
+    "creation_tool": "image_gen",
+    "status": "Художественная версия; новые детали пока не канон"
+  },
+  {
+    "id": "09",
+    "path": "медиа/2026-10-18/09-самолёт-васи-дорисовка.png",
+    "title": "Самолёт Васи — дорисовка по пластилиновой модели",
+    "object_ids": [
+      "vasya-plane"
+    ],
+    "added": "2026-10-18",
+    "sha256": "3ffab34838efa1aa04ff1dfbc06f9edeb9e3d29e59a131d3c58a42720bb1e95c",
+    "kind": "illustration",
+    "source_media_ids": [
+      "01"
+    ],
+    "creation_tool": "image_gen",
+    "status": "Художественная версия; новые детали пока не канон"
   }
 ]
