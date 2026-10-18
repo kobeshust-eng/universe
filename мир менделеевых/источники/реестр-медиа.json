@@ -120,5 +120,21 @@
     ],
     "creation_tool": "image_gen",
     "status": "Художественная версия; новые детали пока не канон"
+  },
+  {
+    "id": "10",
+    "path": "медиа/2026-10-18/10-bmw-левый-эскиз-ильи.png",
+    "title": "BMW Ultra M77 — только левый эскиз Ильи",
+    "object_ids": [
+      "bmw-ultra-77"
+    ],
+    "added": "2026-10-18",
+    "sha256": "2ed3033a1e994e5c1c1b272b014a90cfbd7a1439db92bab627d1d76e447d48bd",
+    "kind": "illustration",
+    "source_media_ids": [
+      "06"
+    ],
+    "creation_tool": "image_gen",
+    "status": "Художественная версия только левого корабля; правая часть исключена"
   }
 ]
