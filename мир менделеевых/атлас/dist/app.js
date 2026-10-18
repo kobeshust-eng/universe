@@ -17,7 +17,7 @@ $('#open-map').addEventListener('click',()=>lightbox('media/2026-10-17-карт�
 
 function showObject(id,scroll=false){
  const o=objects.get(id);if(!o)return;activeObject=id;
- $('#detail').innerHTML=`<p class="eyebrow">${esc(o.kind)}</p><h3>${esc(o.name)}</h3><p class="author">${o.author?'Автор: '+esc(o.author)+' · ':''}Записано ${esc(o.recorded.split('-').reverse().join('.'))}</p><ul>${o.facts.map(f=>`<li>${esc(f)}</li>`).join('')}</ul>${o.media.length?o.media.map(m=>`${data.media.find(item=>item.path===m)?.kind==='illustration'?'<p class="artifact-note">Дорисовка по оригиналу · художественная версия</p>':''}<button class="detail-media" data-media="${esc(m)}" aria-label="Увеличить: ${esc(o.name)}"><img src="${esc(mediaPath(m))}" alt="${esc(o.name)} — исходный артефакт"></button>`).join(''):`<div class="placeholder"><strong>＋</strong>Здесь будет ваш рисунок${o.kind==='способ управления'?' или жест':''}.<br>Пока у объекта есть история.</div>`}${o.open_questions.length?`<h4>Ещё придумаем</h4><ul>${o.open_questions.map(q=>`<li>${esc(q)}</li>`).join('')}</ul>`:''}${o.related.length?`<h4>Связано с</h4><div class="related">${o.related.map(r=>`<button data-object="${r}">${esc(objects.get(r).name)}</button>`).join('')}</div>`:''}`;
+ $('#detail').innerHTML=`<p class="eyebrow">${esc(o.kind)}</p><h3>${esc(o.name)}</h3><p class="author">${o.author?'Автор: '+esc(o.author)+' · ':''}Записано ${esc(o.recorded.split('-').reverse().join('.'))}</p><ul>${o.facts.map(f=>`<li>${esc(f)}</li>`).join('')}</ul>${o.media.length?o.media.map(m=>`${data.media.find(item=>item.path===m)?.kind==='illustration'?'<p class="artifact-note">Дорисовка по оригиналу · художественная версия</p>':''}<button class="detail-media" data-media="${esc(m)}" aria-label="Увеличить: ${esc(o.name)}"><img src="${esc(mediaPath(m))}" alt="${esc(o.name)} — исходный артефакт"></button>`).join(''):`<div class="placeholder"><strong>＋</strong>${o.artwork_status==='awaiting_user'?'Ждём ваш рисунок.<br>Семья пришлёт его позже.':`Здесь будет ваш рисунок${o.kind==='способ управления'?' или жест':''}.<br>Пока у объекта есть история.`}</div>`}${o.open_questions.length?`<h4>Ещё придумаем</h4><ul>${o.open_questions.map(q=>`<li>${esc(q)}</li>`).join('')}</ul>`:''}${o.related.length?`<h4>Связано с</h4><div class="related">${o.related.map(r=>`<button data-object="${r}">${esc(objects.get(r).name)}</button>`).join('')}</div>`:''}`;
  $('#detail').querySelectorAll('[data-media]').forEach(b=>b.addEventListener('click',()=>lightbox(mediaPath(b.dataset.media),o.name)));
  $('#detail').querySelectorAll('[data-object]').forEach(b=>b.addEventListener('click',()=>showObject(b.dataset.object)));
  document.querySelectorAll('.node').forEach(n=>n.classList.toggle('selected',n.dataset.id===id));
@@ -26,6 +26,7 @@ function showObject(id,scroll=false){
 const positions={
  'earth':[200,125,'planet','Земля',54], 'jupiter':[455,70,'planet','Юпитер',39], 'mars':[455,225,'planet','Марс',33],
  'mercury':[720,70,'planet','Меркурий',25], 'foggy-albion':[800,220,'planet','Туманный Альбион',40],
+ 'alpha':[600,315,'planet','Альфа',30], 'family-flag':[330,1180,'culture','Наш флаг'], 'currency':[680,1180,'culture','Наша валюта'],
  'kot':[160,320,'planet','КОТ',34], 'dad-base':[800,355,'place','Папина база'],
  'vasya-plane':[130,490,'ship','Снежинка'], 'bmw-ultra-77':[365,510,'ship','BMW Ultra 77'],
  'mini-bmw':[150,650,'ship','Мини-BMW'], 'bmw-controller':[390,690,'ship','Мысль и мановение'],
@@ -39,14 +40,14 @@ const ghosts=[
  {id:'gap-18',parent:'flying-house',x:850,y:785,name:'Комнаты дома'},
  {id:'gap-14',parent:'vasya-plane',x:140,y:810,name:'Эмблема Снежинки'}
 ];
-const svg=$('#graph');svg.setAttribute('viewBox','0 0 1000 1090');
+const svg=$('#graph');svg.setAttribute('viewBox','0 0 1000 1260');
 const ns='http://www.w3.org/2000/svg';
 function svgEl(tag,attrs,parent=svg){const el=document.createElementNS(ns,tag);for(const[k,v]of Object.entries(attrs))el.setAttribute(k,v);parent.appendChild(el);return el;}
 function svgText(txt,x,y,cls,parent=svg){const t=svgEl('text',{x,y,'text-anchor':'middle',class:cls},parent);t.textContent=txt;return t;}
 const defs=svgEl('defs',{});
 const colors={earth:['#77b6b0','#285b73'],jupiter:['#dec495','#ab7655'],mars:['#d78b61','#9a533c'],mercury:['#adbbc2','#606d7a'],'foggy-albion':['#d4d7d2','#708c9b'],kot:['#c0c6a3','#747f6b'],'black-holes':['#5b557c','#252138']};
 for(const[id,[a,b]]of Object.entries(colors)){const grad=svgEl('radialGradient',{id:'grad-'+id,cx:'30%',cy:'25%',r:'80%'},defs);svgEl('stop',{offset:'0%','stop-color':a},grad);svgEl('stop',{offset:'100%','stop-color':b},grad);}
-svgText('ПЛАНЕТЫ И НАШ ДОМ',180,28,'region-label');svgText('КОРАБЛИ И ПУТЕШЕСТВИЯ',215,427,'region-label');svgText('ЭНЕРГИЯ НАШЕГО МИРА',180,920,'region-label');
+svgText('ПЛАНЕТЫ И НАШ ДОМ',180,28,'region-label');svgText('КОРАБЛИ И ПУТЕШЕСТВИЯ',215,427,'region-label');svgText('ЭНЕРГИЯ НАШЕГО МИРА',180,920,'region-label');svgText('НАШ ФЛАГ И ВАЛЮТА · ЖДЁМ РИСУНКИ',500,1100,'region-label');
 const edgeGroup=svgEl('g',{});
 for(const e of data.relationships){
  const a=positions[e.source],b=positions[e.target];if(!a||!b)continue;
@@ -59,11 +60,12 @@ const nodeGroup=svgEl('g',{});
 for(const [id,[x,y,category,title,r]]of Object.entries(positions)){
  const o=objects.get(id);const g=svgEl('g',{class:'node',transform:`translate(${x},${y})`,'data-id':id,'data-category':category,role:'button',tabindex:'0','aria-label':'Открыть объект: '+o.name},nodeGroup);
  if(r){
-   svgEl('circle',{r,fill:'url(#grad-'+id+')',class:'body'},g);
+   svgEl('circle',{r,fill:id==='alpha'?'none':'url(#grad-'+id+')',class:'body'},g);
    if(id==='jupiter'){[-13,-2,10].forEach(yy=>svgEl('path',{d:`M ${-r+4} ${yy} Q 0 ${yy+13} ${r-4} ${yy}`,stroke:'#f3d4a7','stroke-width':5,fill:'none',opacity:.28},g));}
    if(id==='earth'){svgEl('path',{d:'M -28 -21 Q -10 -40 6 -24 L 0 -3 L 22 5 L 8 28 L -10 18 L -15 0 L -30 -5 Z',fill:'#c7d1a0',opacity:.7},g);}
    if(id==='black-holes'){svgEl('ellipse',{rx:57,ry:13,transform:'rotate(-23)',fill:'none',stroke:'#be9edb','stroke-width':3,opacity:.65},g);svgEl('circle',{r:21,fill:'#141829'},g);}
    if(id==='kot')svgText('КОТ',0,6,'title',g);
+   if(id==='alpha')svgText('+',0,7,'glyph',g);
    svgText(title,0,r+23,'title',g);
    if(id==='earth')svgText('наш дом',0,r+41,'subtitle',g);
    if(id==='black-holes')svgText('дают энергию · не вредят',0,r+41,'subtitle',g);
@@ -71,7 +73,7 @@ for(const [id,[x,y,category,title,r]]of Object.entries(positions)){
    svgEl('rect',{x:-87,y:-40,width:174,height:80,rx:9,fill:category==='energy'?'#292d47':'#20394d',class:'body'},g);
    const m=o.media[0];
    if(m){const clip=svgEl('clipPath',{id:'clip-'+id},defs);svgEl('rect',{x:x-76,y:y-30,width:48,height:48,rx:7},clip);svgEl('image',{href:mediaPath(m),x:-76,y:-30,width:48,height:48,preserveAspectRatio:'xMidYMid slice'},g);svgText(title,0,29,'title',g);svgText(o.author||'источник энергии',28,-7,'subtitle',g);}
-   else{svgText(id==='bmw-controller'?'✧':id==='dad-base'?'⌂':id==='house-mini-ships'?'20':'◉',0,-3,'glyph',g);svgText(title,0,26,'title',g);}
+   else{svgText(o.artwork_status==='awaiting_user'?'+':id==='bmw-controller'?'✧':id==='dad-base'?'⌂':id==='house-mini-ships'?'20':'◉',0,-3,'glyph',g);svgText(title,0,26,'title',g);}
  }
  g.addEventListener('click',()=>{panel('map');showObject(id,window.innerWidth<800)});
  g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();showObject(id,window.innerWidth<800)}});
@@ -97,6 +99,7 @@ $('#search').addEventListener('input',e=>{
 });
 function gallery(){
  $('#gallery').innerHTML=data.media.map((m,i)=>`<figure class="artifact"><button data-media="${i}" aria-label="Рассмотреть: ${esc(m.title)}"><img loading="lazy" src="${esc(mediaPath(m.path))}" alt="${esc(m.title)}"></button><figcaption><span class="artifact-no">${m.kind==='illustration'?'ДОРИСОВКА':'ОРИГИНАЛ'} ${String(i+1).padStart(2,'0')} / ${esc(m.added.split('-').reverse().join('.'))}</span><h3>${esc(m.title)}</h3>${m.kind==='illustration'?'<p class="artifact-note">Художественная версия. Новые детали ещё не приняты в мир.</p>':''}<div class="artifact-links">${m.object_ids.map(id=>`<button data-object="${id}">${esc(objects.get(id).name)} ↗</button>`).join('')}</div></figcaption></figure>`).join('');
+ $('#gallery').insertAdjacentHTML('beforeend',data.objects.filter(o=>o.artwork_status==='awaiting_user').map(o=>`<figure class="artifact"><div class="placeholder"><strong>＋</strong>Ждём рисунок от семьи</div><figcaption><span class="artifact-no">МЕСТО ДЛЯ БУДУЩЕГО РИСУНКА</span><h3>${esc(o.name)}</h3><div class="artifact-links"><button data-object="${o.id}">Открыть карточку ↗</button></div></figcaption></figure>`).join(''));
  $('#gallery').querySelectorAll('[data-media]').forEach(b=>b.addEventListener('click',()=>{const m=data.media[+b.dataset.media];lightbox(mediaPath(m.path),m.title)}));
  $('#gallery').querySelectorAll('[data-object]').forEach(b=>b.addEventListener('click',()=>{panel('map');showObject(b.dataset.object,true)}));
 }
