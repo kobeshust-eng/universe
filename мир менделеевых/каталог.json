@@ -19,7 +19,16 @@
         "mars",
         "xbox-series-x8"
       ],
-      "media": []
+      "media": [
+        "медиа/2026-10-19/живой-космос/30-planety-list.png"
+      ],
+      "cover_media_id": "30",
+      "cover_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 0,
+        "row": 0
+      }
     },
     {
       "id": "jupiter",
@@ -32,7 +41,16 @@
       ],
       "open_questions": [],
       "related": [],
-      "media": []
+      "media": [
+        "медиа/2026-10-19/живой-космос/30-planety-list.png"
+      ],
+      "cover_media_id": "31",
+      "cover_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 1,
+        "row": 0
+      }
     },
     {
       "id": "mars",
@@ -45,7 +63,16 @@
       ],
       "open_questions": [],
       "related": [],
-      "media": []
+      "media": [
+        "медиа/2026-10-19/живой-космос/30-planety-list.png"
+      ],
+      "cover_media_id": "32",
+      "cover_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 2,
+        "row": 0
+      }
     },
     {
       "id": "mercury",
@@ -60,7 +87,16 @@
         "Какие особенности есть у Меркурия?"
       ],
       "related": [],
-      "media": []
+      "media": [
+        "медиа/2026-10-19/живой-космос/30-planety-list.png"
+      ],
+      "cover_media_id": "33",
+      "cover_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 0,
+        "row": 1
+      }
     },
     {
       "id": "foggy-albion",
@@ -75,7 +111,16 @@
       "related": [
         "dad-base"
       ],
-      "media": []
+      "media": [
+        "медиа/2026-10-19/живой-космос/30-planety-list.png"
+      ],
+      "cover_media_id": "34",
+      "cover_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 1,
+        "row": 1
+      }
     },
     {
       "id": "kot",
@@ -91,7 +136,16 @@
         "Входит ли она в уже названные 125 обитаемых планет?"
       ],
       "related": [],
-      "media": []
+      "media": [
+        "медиа/2026-10-19/живой-космос/30-planety-list.png"
+      ],
+      "cover_media_id": "35",
+      "cover_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 2,
+        "row": 1
+      }
     },
     {
       "id": "dad-base",
@@ -108,7 +162,16 @@
       "related": [
         "foggy-albion"
       ],
-      "media": []
+      "media": [
+        "медиа/2026-10-19/живой-космос/30-planety-list.png"
+      ],
+      "cover_media_id": "38",
+      "cover_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 2,
+        "row": 2
+      }
     },
     {
       "id": "bmw-ultra-77",
@@ -136,9 +199,16 @@
         "медиа/2026-10-17/05-корабль-ильи.png",
         "медиа/2026-10-17/06-bmw-и-мини-bmw.png",
         "медиа/2026-10-18/07-bmw-дорисовка.png",
-        "медиа/2026-10-18/10-bmw-левый-эскиз-ильи.png"
+        "медиа/2026-10-18/10-bmw-левый-эскиз-ильи.png",
+        "медиа/2026-10-19/живой-космос/31-transport-list.png"
       ],
-      "cover_media_id": "10"
+      "cover_media_id": "39",
+      "cover_crop": {
+        "cols": 3,
+        "rows": 2,
+        "col": 0,
+        "row": 0
+      }
     },
     {
       "id": "mini-bmw",
@@ -159,9 +229,16 @@
       ],
       "media": [
         "медиа/2026-10-17/06-bmw-и-мини-bmw.png",
-        "медиа/2026-10-18/07-bmw-дорисовка.png"
+        "медиа/2026-10-18/07-bmw-дорисовка.png",
+        "медиа/2026-10-19/живой-космос/31-transport-list.png"
       ],
-      "cover_media_id": "07"
+      "cover_media_id": "41",
+      "cover_crop": {
+        "cols": 3,
+        "rows": 2,
+        "col": 2,
+        "row": 0
+      }
     },
     {
       "id": "bmw-controller",
@@ -207,9 +284,16 @@
       ],
       "media": [
         "медиа/2026-10-17/04-летающий-дом-и-мини-корабль.png",
-        "медиа/2026-10-18/08-летающий-дом-дорисовка.png"
+        "медиа/2026-10-18/08-летающий-дом-дорисовка.png",
+        "медиа/2026-10-19/живой-космос/31-transport-list.png"
       ],
-      "cover_media_id": "08"
+      "cover_media_id": "43",
+      "cover_crop": {
+        "cols": 3,
+        "rows": 2,
+        "col": 1,
+        "row": 1
+      }
     },
     {
       "id": "house-mini-ships",
@@ -231,9 +315,16 @@
       ],
       "media": [
         "медиа/2026-10-17/04-летающий-дом-и-мини-корабль.png",
-        "медиа/2026-10-18/08-летающий-дом-дорисовка.png"
+        "медиа/2026-10-18/08-летающий-дом-дорисовка.png",
+        "медиа/2026-10-19/живой-космос/31-transport-list.png"
       ],
-      "cover_media_id": "08"
+      "cover_media_id": "44",
+      "cover_crop": {
+        "cols": 3,
+        "rows": 2,
+        "col": 2,
+        "row": 1
+      }
     },
     {
       "id": "vasya-plane",
@@ -253,9 +344,16 @@
       "media": [
         "медиа/2026-10-17/01-самолёт-васи.png",
         "медиа/2026-10-18/09-самолёт-васи-дорисовка.png",
-        "медиа/2026-10-19/дорисовки/19-снежинка-с-именем.png"
+        "медиа/2026-10-19/дорисовки/19-снежинка-с-именем.png",
+        "медиа/2026-10-19/живой-космос/31-transport-list.png"
       ],
-      "cover_media_id": "19"
+      "cover_media_id": "42",
+      "cover_crop": {
+        "cols": 3,
+        "rows": 2,
+        "col": 0,
+        "row": 1
+      }
     },
     {
       "id": "black-holes",
@@ -275,7 +373,16 @@
         "dad-black-hole",
         "bmw-black-hole"
       ],
-      "media": []
+      "media": [
+        "медиа/2026-10-19/живой-космос/32-artefakty-list.png"
+      ],
+      "cover_media_id": "54",
+      "cover_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 1,
+        "row": 2
+      }
     },
     {
       "id": "vasya-black-hole",
@@ -296,9 +403,16 @@
       ],
       "media": [
         "медиа/2026-10-17/02-чёрная-дыра-васи.png",
-        "медиа/2026-10-19/дорисовки/17-чёрная-дыра-васи-дорисовка.png"
+        "медиа/2026-10-19/дорисовки/17-чёрная-дыра-васи-дорисовка.png",
+        "медиа/2026-10-19/живой-космос/32-artefakty-list.png"
       ],
-      "cover_media_id": "17"
+      "cover_media_id": "50",
+      "cover_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 0,
+        "row": 2
+      }
     },
     {
       "id": "dad-black-hole",
@@ -320,9 +434,16 @@
       ],
       "media": [
         "медиа/2026-10-17/03-питающая-чёрная-дыра-папы.png",
-        "медиа/2026-10-19/дорисовки/18-питающая-дыра-папы-дорисовка.png"
+        "медиа/2026-10-19/дорисовки/18-питающая-дыра-папы-дорисовка.png",
+        "медиа/2026-10-19/живой-космос/32-artefakty-list.png"
       ],
-      "cover_media_id": "18"
+      "cover_media_id": "51",
+      "cover_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 1,
+        "row": 2
+      }
     },
     {
       "id": "bmw-black-hole",
@@ -344,9 +465,17 @@
       ],
       "media": [
         "медиа/2026-10-17/05-корабль-ильи.png",
-        "медиа/2026-10-18/07-bmw-дорисовка.png"
+        "медиа/2026-10-18/07-bmw-дорисовка.png",
+        "медиа/2026-10-19/живой-космос/31-transport-list.png",
+        "медиа/2026-10-19/живой-космос/32-artefakty-list.png"
       ],
-      "cover_media_id": "07"
+      "cover_media_id": "52",
+      "cover_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 2,
+        "row": 2
+      }
     },
     {
       "id": "alpha",
@@ -374,11 +503,18 @@
         "медиа/2026-10-19/11-дромалогия-и-альфа.png",
         "медиа/2026-10-19/16-комплексный-рисунок-ильи.jpeg",
         "медиа/2026-10-19/дорисовки/25-лист-ильи-дорисовка.png",
-        "медиа/2026-10-19/дорисовки/26-альфа-дорисовка.png"
+        "медиа/2026-10-19/дорисовки/26-альфа-дорисовка.png",
+        "медиа/2026-10-19/живой-космос/30-planety-list.png"
       ],
       "updated": "2026-10-19",
       "source_meeting": "встречи/2026-10-18-1036.md",
-      "cover_media_id": "26"
+      "cover_media_id": "36",
+      "cover_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 0,
+        "row": 2
+      }
     },
     {
       "id": "family-flag",
@@ -398,11 +534,18 @@
       "related": [],
       "media": [
         "медиа/2026-10-19/15-флаг.jpeg",
-        "медиа/2026-10-19/дорисовки/24-флаг-дорисовка.png"
+        "медиа/2026-10-19/дорисовки/24-флаг-дорисовка.png",
+        "медиа/2026-10-19/живой-космос/32-artefakty-list.png"
       ],
       "updated": "2026-10-19",
       "source_meeting": "встречи/2026-10-18-1036.md",
-      "cover_media_id": "24"
+      "cover_media_id": "45",
+      "cover_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 0,
+        "row": 0
+      }
     },
     {
       "id": "currency",
@@ -433,11 +576,18 @@
         "медиа/2026-10-19/16-комплексный-рисунок-ильи.jpeg",
         "медиа/2026-10-19/дорисовки/21-вора-дорисовка.png",
         "медиа/2026-10-19/дорисовки/22-символ-воры-дорисовка.png",
-        "медиа/2026-10-19/дорисовки/25-лист-ильи-дорисовка.png"
+        "медиа/2026-10-19/дорисовки/25-лист-ильи-дорисовка.png",
+        "медиа/2026-10-19/живой-космос/32-artefakty-list.png"
       ],
       "updated": "2026-10-19",
       "source_meeting": "встречи/2026-10-18-1036.md",
-      "cover_media_id": "21"
+      "cover_media_id": "46",
+      "cover_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 1,
+        "row": 0
+      }
     },
     {
       "id": "dromalogy",
@@ -464,11 +614,18 @@
         "медиа/2026-10-19/11-дромалогия-и-альфа.png",
         "медиа/2026-10-19/16-комплексный-рисунок-ильи.jpeg",
         "медиа/2026-10-19/дорисовки/20-дромалогия-дорисовка.png",
-        "медиа/2026-10-19/дорисовки/25-лист-ильи-дорисовка.png"
+        "медиа/2026-10-19/дорисовки/25-лист-ильи-дорисовка.png",
+        "медиа/2026-10-19/живой-космос/32-artefakty-list.png"
       ],
       "updated": "2026-10-19",
       "source_meeting": "встречи/2026-10-18-1036.md",
-      "cover_media_id": "20"
+      "cover_media_id": "47",
+      "cover_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 0,
+        "row": 1
+      }
     },
     {
       "id": "universal-bank",
@@ -491,11 +648,18 @@
         "медиа/2026-10-19/12-вора.png",
         "медиа/2026-10-19/16-комплексный-рисунок-ильи.jpeg",
         "медиа/2026-10-19/дорисовки/21-вора-дорисовка.png",
-        "медиа/2026-10-19/дорисовки/25-лист-ильи-дорисовка.png"
+        "медиа/2026-10-19/дорисовки/25-лист-ильи-дорисовка.png",
+        "медиа/2026-10-19/живой-космос/32-artefakty-list.png"
       ],
       "updated": "2026-10-19",
       "source_meeting": "встречи/2026-10-18-1036.md",
-      "cover_media_id": "21"
+      "cover_media_id": "49",
+      "cover_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 2,
+        "row": 1
+      }
     },
     {
       "id": "xbox-series-x8",
@@ -518,11 +682,18 @@
         "медиа/2026-10-19/14-xbox-series-x8.png",
         "медиа/2026-10-19/16-комплексный-рисунок-ильи.jpeg",
         "медиа/2026-10-19/дорисовки/23-xbox-x8-дорисовка.png",
-        "медиа/2026-10-19/дорисовки/25-лист-ильи-дорисовка.png"
+        "медиа/2026-10-19/дорисовки/25-лист-ильи-дорисовка.png",
+        "медиа/2026-10-19/живой-космос/32-artefakty-list.png"
       ],
       "updated": "2026-10-19",
       "source_meeting": "встречи/2026-10-18-1036.md",
-      "cover_media_id": "23"
+      "cover_media_id": "48",
+      "cover_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 1,
+        "row": 1
+      }
     },
     {
       "id": "levka",
@@ -541,10 +712,446 @@
       ],
       "related": [],
       "media": [
-        "медиа/2026-10-19/27-планета-левка.png"
+        "медиа/2026-10-19/27-планета-левка.png",
+        "медиа/2026-10-19/живой-космос/30-planety-list.png"
       ],
-      "artwork_status": "style_selection",
-      "artwork_note": "Левка показана в четырёх вариантах будущего стиля. Отдельную дорисовку сделаем после выбора направления."
+      "cover_media_id": "37",
+      "cover_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 1,
+        "row": 2
+      }
+    },
+    {
+      "id": "art-planet",
+      "name": "Art Planet",
+      "kind": "планета",
+      "author": null,
+      "recorded": "2026-10-19",
+      "facts": [
+        "Art Planet наблюдает за другими планетами и тем, что происходит в мире.",
+        "Её жители всё время придумывают искусство.",
+        "Ландшафт похож на песчаную плайю: широкое открытое пространство с несколькими арт-объектами.",
+        "На планете одна обсерватория с несколькими телескопами."
+      ],
+      "open_questions": [
+        "Как называются обсерватория и арт-объекты?",
+        "Какие ещё устройства для наблюдения придумает семья?",
+        "Кто живёт на Art Planet и входит ли она в 125 обитаемых планет?"
+      ],
+      "related": [],
+      "media": [
+        "медиа/2026-10-19/живой-космос/28-art-planet-playa.png"
+      ],
+      "cover_media_id": "28"
+    },
+    {
+      "id": "ruined-planet",
+      "name": "Разрушенная планета",
+      "kind": "планета",
+      "author": null,
+      "recorded": "2026-10-19",
+      "facts": [
+        "В мире есть разрушенная планета без чётких очертаний."
+      ],
+      "open_questions": [
+        "Как называется планета?",
+        "Что произошло и можно ли её восстановить?",
+        "Есть ли там жизнь?"
+      ],
+      "related": [],
+      "media": [
+        "медиа/2026-10-19/живой-космос/29-razrushennaya-planeta.png"
+      ],
+      "cover_media_id": "29"
+    },
+    {
+      "id": "judish",
+      "name": "Джудиш",
+      "kind": "планета",
+      "author": null,
+      "recorded": "2026-10-19",
+      "facts": [
+        "Ариэль, муж Надежды Менделеевой, с планеты Джудиш."
+      ],
+      "open_questions": [
+        "Как выглядит Джудиш?",
+        "Что ещё известно о планете?",
+        "Входит ли Джудиш в 125 обитаемых планет?"
+      ],
+      "related": [
+        "char-ariel"
+      ],
+      "media": []
+    },
+    {
+      "id": "char-ilya",
+      "name": "Илья",
+      "kind": "персонаж",
+      "author": null,
+      "recorded": "2026-10-19",
+      "facts": [
+        "Илья придумал BMW Ultra 77."
+      ],
+      "open_questions": [
+        "Какой будет внешний вид и особый игровой жест?"
+      ],
+      "related": [],
+      "media": [
+        "медиа/2026-10-19/живой-космос/34-ekipazh-pyat-personazhey.png"
+      ],
+      "artwork_status": "initial_game_concept",
+      "artwork_note": "Первая упрощённая игровая иллюстрация; семья может уточнить сходство.",
+      "cover_media_id": "58",
+      "cover_crop": {
+        "cols": 5,
+        "rows": 1,
+        "col": 0,
+        "row": 0
+      }
+    },
+    {
+      "id": "char-vasya",
+      "name": "Вася",
+      "kind": "персонаж",
+      "author": null,
+      "recorded": "2026-10-19",
+      "facts": [
+        "Вася слепила «Снежинку» и чёрную дыру."
+      ],
+      "open_questions": [
+        "Какой будет внешний вид и особый игровой жест?"
+      ],
+      "related": [],
+      "media": [
+        "медиа/2026-10-19/живой-космос/34-ekipazh-pyat-personazhey.png"
+      ],
+      "artwork_status": "initial_game_concept",
+      "artwork_note": "Первая упрощённая игровая иллюстрация; семья может уточнить сходство.",
+      "cover_media_id": "59",
+      "cover_crop": {
+        "cols": 5,
+        "rows": 1,
+        "col": 1,
+        "row": 0
+      }
+    },
+    {
+      "id": "char-dad",
+      "name": "Папа Яша",
+      "kind": "персонаж",
+      "author": null,
+      "recorded": "2026-10-19",
+      "facts": [
+        "Папа нарисовал летающий дом."
+      ],
+      "open_questions": [
+        "Какой будет внешний вид и особый игровой жест?"
+      ],
+      "related": [],
+      "media": [
+        "медиа/2026-10-19/живой-космос/34-ekipazh-pyat-personazhey.png"
+      ],
+      "artwork_status": "initial_game_concept",
+      "artwork_note": "Первая упрощённая игровая иллюстрация; семья может уточнить сходство.",
+      "cover_media_id": "60",
+      "cover_crop": {
+        "cols": 5,
+        "rows": 1,
+        "col": 2,
+        "row": 0
+      }
+    },
+    {
+      "id": "char-mom",
+      "name": "Мама Оля",
+      "kind": "персонаж",
+      "author": null,
+      "recorded": "2026-10-19",
+      "facts": [
+        "Мама — персонаж семейной игры."
+      ],
+      "open_questions": [
+        "Какой будет внешний вид и особый игровой жест?"
+      ],
+      "related": [],
+      "media": [
+        "медиа/2026-10-19/живой-космос/34-ekipazh-pyat-personazhey.png"
+      ],
+      "artwork_status": "initial_game_concept",
+      "artwork_note": "Первая упрощённая игровая иллюстрация; семья может уточнить сходство.",
+      "cover_media_id": "61",
+      "cover_crop": {
+        "cols": 5,
+        "rows": 1,
+        "col": 3,
+        "row": 0
+      }
+    },
+    {
+      "id": "char-ira",
+      "name": "Ира",
+      "kind": "персонаж",
+      "author": null,
+      "recorded": "2026-10-19",
+      "facts": [
+        "Ира — персонаж семейной игры."
+      ],
+      "open_questions": [
+        "Какой будет внешний вид и особый игровой жест?"
+      ],
+      "related": [],
+      "media": [
+        "медиа/2026-10-19/живой-космос/34-ekipazh-pyat-personazhey.png"
+      ],
+      "artwork_status": "initial_game_concept",
+      "artwork_note": "Первая упрощённая игровая иллюстрация; семья может уточнить сходство.",
+      "cover_media_id": "62",
+      "cover_crop": {
+        "cols": 5,
+        "rows": 1,
+        "col": 4,
+        "row": 0
+      }
+    },
+    {
+      "id": "char-tanya",
+      "name": "Бабушка Таня",
+      "kind": "персонаж",
+      "author": null,
+      "recorded": "2026-10-19",
+      "facts": [
+        "Бабушка Таня — персонаж семейной игры."
+      ],
+      "open_questions": [
+        "Какой будет внешний вид и особый игровой жест?"
+      ],
+      "related": [],
+      "media": [],
+      "artwork_status": "awaiting_user",
+      "artwork_note": "Игровой образ будет простым; фото внешности не публикуем как карточку персонажа."
+    },
+    {
+      "id": "char-galya",
+      "name": "Бабушка Галя",
+      "kind": "персонаж",
+      "author": null,
+      "recorded": "2026-10-19",
+      "facts": [
+        "Бабушка Галя — персонаж семейной игры."
+      ],
+      "open_questions": [
+        "Какой будет внешний вид и особый игровой жест?"
+      ],
+      "related": [],
+      "media": [],
+      "artwork_status": "awaiting_user",
+      "artwork_note": "Игровой образ будет простым; фото внешности не публикуем как карточку персонажа."
+    },
+    {
+      "id": "char-misha-pool",
+      "name": "Дедушка Миша с бассейном",
+      "kind": "персонаж",
+      "author": null,
+      "recorded": "2026-10-19",
+      "facts": [
+        "Один из двух дедушек Миш, которых семья хочет видеть в игре."
+      ],
+      "open_questions": [
+        "Какой будет внешний вид и особый игровой жест?"
+      ],
+      "related": [],
+      "media": [],
+      "artwork_status": "awaiting_user",
+      "artwork_note": "Игровой образ будет простым; фото внешности не публикуем как карточку персонажа."
+    },
+    {
+      "id": "char-misha-galya",
+      "name": "Дедушка Миша с бабушкой Галей",
+      "kind": "персонаж",
+      "author": null,
+      "recorded": "2026-10-19",
+      "facts": [
+        "Один из двух дедушек Миш, которых семья хочет видеть в игре."
+      ],
+      "open_questions": [
+        "Какой будет внешний вид и особый игровой жест?"
+      ],
+      "related": [],
+      "media": [],
+      "artwork_status": "awaiting_user",
+      "artwork_note": "Игровой образ будет простым; фото внешности не публикуем как карточку персонажа."
+    },
+    {
+      "id": "char-levka",
+      "name": "Лёвка",
+      "kind": "персонаж",
+      "author": null,
+      "recorded": "2026-10-19",
+      "facts": [
+        "Лёвка — персонаж игры; семья ранее назвала планету Левка другом Васи."
+      ],
+      "open_questions": [
+        "Какой будет внешний вид и особый игровой жест?"
+      ],
+      "related": [
+        "levka"
+      ],
+      "media": [],
+      "artwork_status": "awaiting_user",
+      "artwork_note": "Игровой образ будет простым; фото внешности не публикуем как карточку персонажа."
+    },
+    {
+      "id": "char-anya",
+      "name": "Аня Менделеева",
+      "kind": "персонаж",
+      "author": null,
+      "recorded": "2026-10-19",
+      "facts": [
+        "Аня Менделеева — персонаж семейной игры; её муж Артём Котов."
+      ],
+      "open_questions": [
+        "Какой будет внешний вид и особый игровой жест?"
+      ],
+      "related": [],
+      "media": [],
+      "artwork_status": "awaiting_user",
+      "artwork_note": "Игровой образ будет простым; фото внешности не публикуем как карточку персонажа."
+    },
+    {
+      "id": "char-artem",
+      "name": "Артём Котов",
+      "kind": "персонаж",
+      "author": null,
+      "recorded": "2026-10-19",
+      "facts": [
+        "Артём Котов — муж Ани Менделеевой."
+      ],
+      "open_questions": [
+        "Какой будет внешний вид и особый игровой жест?"
+      ],
+      "related": [],
+      "media": [],
+      "artwork_status": "awaiting_user",
+      "artwork_note": "Игровой образ будет простым; фото внешности не публикуем как карточку персонажа."
+    },
+    {
+      "id": "char-nadezhda",
+      "name": "Надежда Менделеева",
+      "kind": "персонаж",
+      "author": null,
+      "recorded": "2026-10-19",
+      "facts": [
+        "Надежда Менделеева — персонаж семейной игры; её муж Ариэль."
+      ],
+      "open_questions": [
+        "Какой будет внешний вид и особый игровой жест?"
+      ],
+      "related": [],
+      "media": [],
+      "artwork_status": "awaiting_user",
+      "artwork_note": "Игровой образ будет простым; фото внешности не публикуем как карточку персонажа."
+    },
+    {
+      "id": "char-ariel",
+      "name": "Ариэль",
+      "kind": "персонаж",
+      "author": null,
+      "recorded": "2026-10-19",
+      "facts": [
+        "Ариэль — муж Надежды Менделеевой, с планеты Джудиш."
+      ],
+      "open_questions": [
+        "Какой будет внешний вид и особый игровой жест?"
+      ],
+      "related": [
+        "judish"
+      ],
+      "media": [],
+      "artwork_status": "awaiting_user",
+      "artwork_note": "Игровой образ будет простым; фото внешности не публикуем как карточку персонажа."
+    },
+    {
+      "id": "alien-alpha",
+      "name": "Инопланетянин с Альфы",
+      "kind": "инопланетянин",
+      "author": null,
+      "recorded": "2026-10-19",
+      "facts": [
+        "Игровой образ существа с планеты Альфа пока предложен как концепт."
+      ],
+      "open_questions": [
+        "Как его зовут и чем он помогает команде?"
+      ],
+      "related": [
+        "alpha"
+      ],
+      "media": [
+        "медиа/2026-10-19/живой-космос/33-inoplanetyane-list.png"
+      ],
+      "concept_only": true,
+      "cover_media_id": "55",
+      "cover_crop": {
+        "cols": 3,
+        "rows": 1,
+        "col": 0,
+        "row": 0
+      }
+    },
+    {
+      "id": "alien-jupiter",
+      "name": "Инопланетянин с Юпитера",
+      "kind": "инопланетянин",
+      "author": null,
+      "recorded": "2026-10-19",
+      "facts": [
+        "Игровой образ существа с планеты Юпитер пока предложен как концепт."
+      ],
+      "open_questions": [
+        "Как его зовут и чем он помогает команде?"
+      ],
+      "related": [
+        "jupiter"
+      ],
+      "media": [
+        "медиа/2026-10-19/живой-космос/33-inoplanetyane-list.png"
+      ],
+      "concept_only": true,
+      "cover_media_id": "56",
+      "cover_crop": {
+        "cols": 3,
+        "rows": 1,
+        "col": 1,
+        "row": 0
+      }
+    },
+    {
+      "id": "alien-mars",
+      "name": "Инопланетянин с Марса",
+      "kind": "инопланетянин",
+      "author": null,
+      "recorded": "2026-10-19",
+      "facts": [
+        "Игровой образ существа с планеты Марс пока предложен как концепт."
+      ],
+      "open_questions": [
+        "Как его зовут и чем он помогает команде?"
+      ],
+      "related": [
+        "mars"
+      ],
+      "media": [
+        "медиа/2026-10-19/живой-космос/33-inoplanetyane-list.png"
+      ],
+      "concept_only": true,
+      "cover_media_id": "57",
+      "cover_crop": {
+        "cols": 3,
+        "rows": 1,
+        "col": 2,
+        "row": 0
+      }
     }
   ],
   "media": [
@@ -559,6 +1166,7 @@
       "added": "2026-10-17",
       "sha256": "e641e1d15b2320ad2f15a52044b9df199dc1f4c8a0077bcd6606041ff8f9ee41",
       "illustration_ids": [
+        "42",
         "19"
       ]
     },
@@ -573,6 +1181,7 @@
       "added": "2026-10-17",
       "sha256": "f8b0d3485eb3fa9c474fb106d8e8ee7fb72ba02744454dcab3d01afdf6c4f6de",
       "illustration_ids": [
+        "50",
         "17"
       ]
     },
@@ -587,6 +1196,7 @@
       "added": "2026-10-17",
       "sha256": "9067373b483d1a90e82cf861392a4a8b9553b904c33db805943aef531a0d878c",
       "illustration_ids": [
+        "51",
         "18"
       ]
     },
@@ -602,6 +1212,8 @@
       "added": "2026-10-17",
       "sha256": "c43f4d35c70e730db3290fe34ee9ad104221071ca5ffa835788a1ff24107a227",
       "illustration_ids": [
+        "43",
+        "44",
         "08"
       ]
     },
@@ -617,6 +1229,8 @@
       "added": "2026-10-17",
       "sha256": "f2132177566af43f60252d72664db9787651e9ade19375a86c9b9d6c2f13feaf",
       "illustration_ids": [
+        "39",
+        "40",
         "07"
       ]
     },
@@ -632,6 +1246,8 @@
       "added": "2026-10-17",
       "sha256": "9cd4f5b5e7572fa133394e42989ae52cae204ed038bc49fe3ddcdbc4b3815e96",
       "illustration_ids": [
+        "39",
+        "41",
         "10"
       ]
     },
@@ -721,6 +1337,8 @@
       "author": "Илья",
       "provenance": "Комплексный рисунок Ильи или его предоставленный семьёй фрагмент.",
       "illustration_ids": [
+        "47",
+        "36",
         "20",
         "26"
       ]
@@ -741,6 +1359,7 @@
       "author": "Илья",
       "provenance": "Комплексный рисунок Ильи или его предоставленный семьёй фрагмент.",
       "illustration_ids": [
+        "46",
         "21"
       ]
     },
@@ -759,6 +1378,7 @@
       "author": "Илья",
       "provenance": "Комплексный рисунок Ильи или его предоставленный семьёй фрагмент.",
       "illustration_ids": [
+        "53",
         "22"
       ]
     },
@@ -777,6 +1397,7 @@
       "author": "Илья",
       "provenance": "Комплексный рисунок Ильи или его предоставленный семьёй фрагмент.",
       "illustration_ids": [
+        "48",
         "23"
       ]
     },
@@ -793,6 +1414,7 @@
       "sha256": "43678230240363f3a0c9f7b46e942c7f40cc0df7376949f44b1a3cd15ab3e318",
       "kind": "original",
       "illustration_ids": [
+        "45",
         "24"
       ]
     },
@@ -815,6 +1437,9 @@
       "author": "Илья",
       "provenance": "Комплексный рисунок Ильи или его предоставленный семьёй фрагмент.",
       "illustration_ids": [
+        "47",
+        "46",
+        "48",
         "25"
       ]
     },
@@ -994,8 +1619,663 @@
       "added": "2026-10-19",
       "sha256": "46266db077d02065449598a69b61fac583778063fce554c147b464fee1ee3297",
       "kind": "original",
-      "illustration_ids": [],
+      "illustration_ids": [
+        "37"
+      ],
       "artwork_note": "Левка показана в четырёх вариантах будущего стиля. Отдельную дорисовку сделаем после выбора направления."
+    },
+    {
+      "id": "28",
+      "path": "медиа/2026-10-19/живой-космос/28-art-planet-playa.png",
+      "title": "Art Planet — спокойная плайя и обсерватория",
+      "object_ids": [
+        "art-planet"
+      ],
+      "added": "2026-10-19",
+      "sha256": "c0517e3dd0fe196144f0c69e41d197d883d2186d197df9907f5269d0faddc4d7",
+      "kind": "illustration",
+      "creation_tool": "image_gen",
+      "status": "Художественная версия в выбранном стиле «Живой космос»"
+    },
+    {
+      "id": "29",
+      "path": "медиа/2026-10-19/живой-космос/29-razrushennaya-planeta.png",
+      "title": "Разрушенная планета — художественная версия",
+      "object_ids": [
+        "ruined-planet"
+      ],
+      "added": "2026-10-19",
+      "sha256": "46b7af897ae9dc5f045df6ed87ffdea129f639e2264ce21007fb02a75d789f36",
+      "kind": "illustration",
+      "creation_tool": "image_gen",
+      "status": "Художественная версия в выбранном стиле «Живой космос»"
+    },
+    {
+      "id": "30",
+      "path": "медиа/2026-10-19/живой-космос/30-planety-list.png",
+      "title": "Земля — Живой космос",
+      "object_ids": [
+        "earth"
+      ],
+      "added": "2026-10-19",
+      "sha256": "2258cbdce015d9cb151d146d41cc17ff1a1ea1b359b2d145b0e0a6d1d5483be9",
+      "kind": "illustration",
+      "creation_tool": "image_gen",
+      "status": "Художественная версия в выбранном стиле «Живой космос»",
+      "display_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 0,
+        "row": 0
+      }
+    },
+    {
+      "id": "31",
+      "path": "медиа/2026-10-19/живой-космос/30-planety-list.png",
+      "title": "Юпитер — Живой космос",
+      "object_ids": [
+        "jupiter"
+      ],
+      "added": "2026-10-19",
+      "sha256": "2258cbdce015d9cb151d146d41cc17ff1a1ea1b359b2d145b0e0a6d1d5483be9",
+      "kind": "illustration",
+      "creation_tool": "image_gen",
+      "status": "Художественная версия в выбранном стиле «Живой космос»",
+      "display_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 1,
+        "row": 0
+      }
+    },
+    {
+      "id": "32",
+      "path": "медиа/2026-10-19/живой-космос/30-planety-list.png",
+      "title": "Марс — Живой космос",
+      "object_ids": [
+        "mars"
+      ],
+      "added": "2026-10-19",
+      "sha256": "2258cbdce015d9cb151d146d41cc17ff1a1ea1b359b2d145b0e0a6d1d5483be9",
+      "kind": "illustration",
+      "creation_tool": "image_gen",
+      "status": "Художественная версия в выбранном стиле «Живой космос»",
+      "display_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 2,
+        "row": 0
+      }
+    },
+    {
+      "id": "33",
+      "path": "медиа/2026-10-19/живой-космос/30-planety-list.png",
+      "title": "Меркурий — Живой космос",
+      "object_ids": [
+        "mercury"
+      ],
+      "added": "2026-10-19",
+      "sha256": "2258cbdce015d9cb151d146d41cc17ff1a1ea1b359b2d145b0e0a6d1d5483be9",
+      "kind": "illustration",
+      "creation_tool": "image_gen",
+      "status": "Художественная версия в выбранном стиле «Живой космос»",
+      "display_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 0,
+        "row": 1
+      }
+    },
+    {
+      "id": "34",
+      "path": "медиа/2026-10-19/живой-космос/30-planety-list.png",
+      "title": "Туманный Альбион — Живой космос",
+      "object_ids": [
+        "foggy-albion"
+      ],
+      "added": "2026-10-19",
+      "sha256": "2258cbdce015d9cb151d146d41cc17ff1a1ea1b359b2d145b0e0a6d1d5483be9",
+      "kind": "illustration",
+      "creation_tool": "image_gen",
+      "status": "Художественная версия в выбранном стиле «Живой космос»",
+      "display_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 1,
+        "row": 1
+      }
+    },
+    {
+      "id": "35",
+      "path": "медиа/2026-10-19/живой-космос/30-planety-list.png",
+      "title": "КОТ — Живой космос",
+      "object_ids": [
+        "kot"
+      ],
+      "added": "2026-10-19",
+      "sha256": "2258cbdce015d9cb151d146d41cc17ff1a1ea1b359b2d145b0e0a6d1d5483be9",
+      "kind": "illustration",
+      "creation_tool": "image_gen",
+      "status": "Художественная версия в выбранном стиле «Живой космос»",
+      "display_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 2,
+        "row": 1
+      }
+    },
+    {
+      "id": "36",
+      "path": "медиа/2026-10-19/живой-космос/30-planety-list.png",
+      "title": "Альфа — Живой космос",
+      "object_ids": [
+        "alpha"
+      ],
+      "added": "2026-10-19",
+      "sha256": "2258cbdce015d9cb151d146d41cc17ff1a1ea1b359b2d145b0e0a6d1d5483be9",
+      "kind": "illustration",
+      "creation_tool": "image_gen",
+      "status": "Художественная версия в выбранном стиле «Живой космос»",
+      "display_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 0,
+        "row": 2
+      }
+    },
+    {
+      "id": "37",
+      "path": "медиа/2026-10-19/живой-космос/30-planety-list.png",
+      "title": "Левка — Живой космос",
+      "object_ids": [
+        "levka"
+      ],
+      "added": "2026-10-19",
+      "sha256": "2258cbdce015d9cb151d146d41cc17ff1a1ea1b359b2d145b0e0a6d1d5483be9",
+      "kind": "illustration",
+      "creation_tool": "image_gen",
+      "status": "Художественная версия в выбранном стиле «Живой космос»",
+      "display_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 1,
+        "row": 2
+      }
+    },
+    {
+      "id": "38",
+      "path": "медиа/2026-10-19/живой-космос/30-planety-list.png",
+      "title": "Папина база — Живой космос",
+      "object_ids": [
+        "dad-base"
+      ],
+      "added": "2026-10-19",
+      "sha256": "2258cbdce015d9cb151d146d41cc17ff1a1ea1b359b2d145b0e0a6d1d5483be9",
+      "kind": "illustration",
+      "creation_tool": "image_gen",
+      "status": "Художественная версия в выбранном стиле «Живой космос»",
+      "display_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 2,
+        "row": 2
+      }
+    },
+    {
+      "id": "39",
+      "path": "медиа/2026-10-19/живой-космос/31-transport-list.png",
+      "title": "BMW Ultra 77 — Живой космос",
+      "object_ids": [
+        "bmw-ultra-77"
+      ],
+      "added": "2026-10-19",
+      "sha256": "9e067023c2ce7615977a5bebaf544c1d51bd663db16aa5224a3336b6d4b7abef",
+      "kind": "illustration",
+      "creation_tool": "image_gen",
+      "status": "Художественная версия в выбранном стиле «Живой космос»",
+      "display_crop": {
+        "cols": 3,
+        "rows": 2,
+        "col": 0,
+        "row": 0
+      }
+    },
+    {
+      "id": "40",
+      "path": "медиа/2026-10-19/живой-космос/31-transport-list.png",
+      "title": "Питающая чёрная дыра BMW — Живой космос",
+      "object_ids": [
+        "bmw-black-hole"
+      ],
+      "added": "2026-10-19",
+      "sha256": "9e067023c2ce7615977a5bebaf544c1d51bd663db16aa5224a3336b6d4b7abef",
+      "kind": "illustration",
+      "creation_tool": "image_gen",
+      "status": "Художественная версия в выбранном стиле «Живой космос»",
+      "display_crop": {
+        "cols": 3,
+        "rows": 2,
+        "col": 1,
+        "row": 0
+      }
+    },
+    {
+      "id": "41",
+      "path": "медиа/2026-10-19/живой-космос/31-transport-list.png",
+      "title": "Мини-BMW — Живой космос",
+      "object_ids": [
+        "mini-bmw"
+      ],
+      "added": "2026-10-19",
+      "sha256": "9e067023c2ce7615977a5bebaf544c1d51bd663db16aa5224a3336b6d4b7abef",
+      "kind": "illustration",
+      "creation_tool": "image_gen",
+      "status": "Художественная версия в выбранном стиле «Живой космос»",
+      "display_crop": {
+        "cols": 3,
+        "rows": 2,
+        "col": 2,
+        "row": 0
+      }
+    },
+    {
+      "id": "42",
+      "path": "медиа/2026-10-19/живой-космос/31-transport-list.png",
+      "title": "Снежинка — самолёт Васи — Живой космос",
+      "object_ids": [
+        "vasya-plane"
+      ],
+      "added": "2026-10-19",
+      "sha256": "9e067023c2ce7615977a5bebaf544c1d51bd663db16aa5224a3336b6d4b7abef",
+      "kind": "illustration",
+      "creation_tool": "image_gen",
+      "status": "Художественная версия в выбранном стиле «Живой космос»",
+      "display_crop": {
+        "cols": 3,
+        "rows": 2,
+        "col": 0,
+        "row": 1
+      }
+    },
+    {
+      "id": "43",
+      "path": "медиа/2026-10-19/живой-космос/31-transport-list.png",
+      "title": "Летающий дом — Живой космос",
+      "object_ids": [
+        "flying-house"
+      ],
+      "added": "2026-10-19",
+      "sha256": "9e067023c2ce7615977a5bebaf544c1d51bd663db16aa5224a3336b6d4b7abef",
+      "kind": "illustration",
+      "creation_tool": "image_gen",
+      "status": "Художественная версия в выбранном стиле «Живой космос»",
+      "display_crop": {
+        "cols": 3,
+        "rows": 2,
+        "col": 1,
+        "row": 1
+      }
+    },
+    {
+      "id": "44",
+      "path": "медиа/2026-10-19/живой-космос/31-transport-list.png",
+      "title": "20 мини-кораблей летающего дома — Живой космос",
+      "object_ids": [
+        "house-mini-ships"
+      ],
+      "added": "2026-10-19",
+      "sha256": "9e067023c2ce7615977a5bebaf544c1d51bd663db16aa5224a3336b6d4b7abef",
+      "kind": "illustration",
+      "creation_tool": "image_gen",
+      "status": "Художественная версия в выбранном стиле «Живой космос»",
+      "display_crop": {
+        "cols": 3,
+        "rows": 2,
+        "col": 2,
+        "row": 1
+      }
+    },
+    {
+      "id": "45",
+      "path": "медиа/2026-10-19/живой-космос/32-artefakty-list.png",
+      "title": "Наш флаг — Живой космос",
+      "object_ids": [
+        "family-flag"
+      ],
+      "added": "2026-10-19",
+      "sha256": "2a1b3af0a0294bcdc42516f9fec7830bc94ca6bd666a1fac873464d2f08011ac",
+      "kind": "illustration",
+      "creation_tool": "image_gen",
+      "status": "Художественная версия в выбранном стиле «Живой космос»",
+      "display_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 0,
+        "row": 0
+      }
+    },
+    {
+      "id": "46",
+      "path": "медиа/2026-10-19/живой-космос/32-artefakty-list.png",
+      "title": "ВОРА — Живой космос",
+      "object_ids": [
+        "currency"
+      ],
+      "added": "2026-10-19",
+      "sha256": "2a1b3af0a0294bcdc42516f9fec7830bc94ca6bd666a1fac873464d2f08011ac",
+      "kind": "illustration",
+      "creation_tool": "image_gen",
+      "status": "Художественная версия в выбранном стиле «Живой космос»",
+      "display_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 1,
+        "row": 0
+      }
+    },
+    {
+      "id": "47",
+      "path": "медиа/2026-10-19/живой-космос/32-artefakty-list.png",
+      "title": "Дромалогия — Живой космос",
+      "object_ids": [
+        "dromalogy"
+      ],
+      "added": "2026-10-19",
+      "sha256": "2a1b3af0a0294bcdc42516f9fec7830bc94ca6bd666a1fac873464d2f08011ac",
+      "kind": "illustration",
+      "creation_tool": "image_gen",
+      "status": "Художественная версия в выбранном стиле «Живой космос»",
+      "display_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 0,
+        "row": 1
+      }
+    },
+    {
+      "id": "48",
+      "path": "медиа/2026-10-19/живой-космос/32-artefakty-list.png",
+      "title": "Xbox Series X8 — Живой космос",
+      "object_ids": [
+        "xbox-series-x8"
+      ],
+      "added": "2026-10-19",
+      "sha256": "2a1b3af0a0294bcdc42516f9fec7830bc94ca6bd666a1fac873464d2f08011ac",
+      "kind": "illustration",
+      "creation_tool": "image_gen",
+      "status": "Художественная версия в выбранном стиле «Живой космос»",
+      "display_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 1,
+        "row": 1
+      }
+    },
+    {
+      "id": "49",
+      "path": "медиа/2026-10-19/живой-космос/32-artefakty-list.png",
+      "title": "Всевселенный банк — Живой космос",
+      "object_ids": [
+        "universal-bank"
+      ],
+      "added": "2026-10-19",
+      "sha256": "2a1b3af0a0294bcdc42516f9fec7830bc94ca6bd666a1fac873464d2f08011ac",
+      "kind": "illustration",
+      "creation_tool": "image_gen",
+      "status": "Художественная версия в выбранном стиле «Живой космос»",
+      "display_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 2,
+        "row": 1
+      }
+    },
+    {
+      "id": "50",
+      "path": "медиа/2026-10-19/живой-космос/32-artefakty-list.png",
+      "title": "Чёрная дыра Васи — Живой космос",
+      "object_ids": [
+        "vasya-black-hole"
+      ],
+      "added": "2026-10-19",
+      "sha256": "2a1b3af0a0294bcdc42516f9fec7830bc94ca6bd666a1fac873464d2f08011ac",
+      "kind": "illustration",
+      "creation_tool": "image_gen",
+      "status": "Художественная версия в выбранном стиле «Живой космос»",
+      "display_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 0,
+        "row": 2
+      }
+    },
+    {
+      "id": "51",
+      "path": "медиа/2026-10-19/живой-космос/32-artefakty-list.png",
+      "title": "Питающая чёрная дыра папы — Живой космос",
+      "object_ids": [
+        "dad-black-hole"
+      ],
+      "added": "2026-10-19",
+      "sha256": "2a1b3af0a0294bcdc42516f9fec7830bc94ca6bd666a1fac873464d2f08011ac",
+      "kind": "illustration",
+      "creation_tool": "image_gen",
+      "status": "Художественная версия в выбранном стиле «Живой космос»",
+      "display_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 1,
+        "row": 2
+      }
+    },
+    {
+      "id": "52",
+      "path": "медиа/2026-10-19/живой-космос/32-artefakty-list.png",
+      "title": "Питающая чёрная дыра BMW — Живой космос",
+      "object_ids": [
+        "bmw-black-hole"
+      ],
+      "added": "2026-10-19",
+      "sha256": "2a1b3af0a0294bcdc42516f9fec7830bc94ca6bd666a1fac873464d2f08011ac",
+      "kind": "illustration",
+      "creation_tool": "image_gen",
+      "status": "Художественная версия в выбранном стиле «Живой космос»",
+      "display_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 2,
+        "row": 2
+      }
+    },
+    {
+      "id": "53",
+      "path": "медиа/2026-10-19/живой-космос/32-artefakty-list.png",
+      "title": "Символ ВОРЫ — Живой космос",
+      "object_ids": [
+        "currency"
+      ],
+      "added": "2026-10-19",
+      "sha256": "2a1b3af0a0294bcdc42516f9fec7830bc94ca6bd666a1fac873464d2f08011ac",
+      "kind": "illustration",
+      "creation_tool": "image_gen",
+      "status": "Художественная версия в выбранном стиле «Живой космос»",
+      "display_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 2,
+        "row": 0
+      }
+    },
+    {
+      "id": "54",
+      "path": "медиа/2026-10-19/живой-космос/32-artefakty-list.png",
+      "title": "Чёрные дыры — Живой космос",
+      "object_ids": [
+        "black-holes"
+      ],
+      "added": "2026-10-19",
+      "sha256": "2a1b3af0a0294bcdc42516f9fec7830bc94ca6bd666a1fac873464d2f08011ac",
+      "kind": "illustration",
+      "creation_tool": "image_gen",
+      "status": "Художественная версия в выбранном стиле «Живой космос»",
+      "display_crop": {
+        "cols": 3,
+        "rows": 3,
+        "col": 1,
+        "row": 2
+      }
+    },
+    {
+      "id": "55",
+      "path": "медиа/2026-10-19/живой-космос/33-inoplanetyane-list.png",
+      "title": "Инопланетянин с Альфы — игровой концепт",
+      "object_ids": [
+        "alien-alpha"
+      ],
+      "added": "2026-10-19",
+      "sha256": "775ec9f96a3d4fec904735ad480260f0b921ed63a0fa2b5068aa2a67baed133a",
+      "kind": "illustration",
+      "creation_tool": "image_gen",
+      "status": "Художественная версия в выбранном стиле «Живой космос»",
+      "display_crop": {
+        "cols": 3,
+        "rows": 1,
+        "col": 0,
+        "row": 0
+      }
+    },
+    {
+      "id": "56",
+      "path": "медиа/2026-10-19/живой-космос/33-inoplanetyane-list.png",
+      "title": "Инопланетянин с Юпитера — игровой концепт",
+      "object_ids": [
+        "alien-jupiter"
+      ],
+      "added": "2026-10-19",
+      "sha256": "775ec9f96a3d4fec904735ad480260f0b921ed63a0fa2b5068aa2a67baed133a",
+      "kind": "illustration",
+      "creation_tool": "image_gen",
+      "status": "Художественная версия в выбранном стиле «Живой космос»",
+      "display_crop": {
+        "cols": 3,
+        "rows": 1,
+        "col": 1,
+        "row": 0
+      }
+    },
+    {
+      "id": "57",
+      "path": "медиа/2026-10-19/живой-космос/33-inoplanetyane-list.png",
+      "title": "Инопланетянин с Марса — игровой концепт",
+      "object_ids": [
+        "alien-mars"
+      ],
+      "added": "2026-10-19",
+      "sha256": "775ec9f96a3d4fec904735ad480260f0b921ed63a0fa2b5068aa2a67baed133a",
+      "kind": "illustration",
+      "creation_tool": "image_gen",
+      "status": "Художественная версия в выбранном стиле «Живой космос»",
+      "display_crop": {
+        "cols": 3,
+        "rows": 1,
+        "col": 2,
+        "row": 0
+      }
+    },
+    {
+      "id": "58",
+      "path": "медиа/2026-10-19/живой-космос/34-ekipazh-pyat-personazhey.png",
+      "title": "Илья — простой игровой образ",
+      "object_ids": [
+        "char-ilya"
+      ],
+      "added": "2026-10-19",
+      "sha256": "21ce089bc10375cff00fe20ff07e2ef98971795d0d57dbef26efb4ae764bb998",
+      "kind": "illustration",
+      "display_crop": {
+        "cols": 5,
+        "rows": 1,
+        "col": 0,
+        "row": 0
+      },
+      "creation_tool": "image_gen",
+      "status": "Первый игровой концепт, внешность может уточнить семья"
+    },
+    {
+      "id": "59",
+      "path": "медиа/2026-10-19/живой-космос/34-ekipazh-pyat-personazhey.png",
+      "title": "Вася — простой игровой образ",
+      "object_ids": [
+        "char-vasya"
+      ],
+      "added": "2026-10-19",
+      "sha256": "21ce089bc10375cff00fe20ff07e2ef98971795d0d57dbef26efb4ae764bb998",
+      "kind": "illustration",
+      "display_crop": {
+        "cols": 5,
+        "rows": 1,
+        "col": 1,
+        "row": 0
+      },
+      "creation_tool": "image_gen",
+      "status": "Первый игровой концепт, внешность может уточнить семья"
+    },
+    {
+      "id": "60",
+      "path": "медиа/2026-10-19/живой-космос/34-ekipazh-pyat-personazhey.png",
+      "title": "Папа Яша — простой игровой образ",
+      "object_ids": [
+        "char-dad"
+      ],
+      "added": "2026-10-19",
+      "sha256": "21ce089bc10375cff00fe20ff07e2ef98971795d0d57dbef26efb4ae764bb998",
+      "kind": "illustration",
+      "display_crop": {
+        "cols": 5,
+        "rows": 1,
+        "col": 2,
+        "row": 0
+      },
+      "creation_tool": "image_gen",
+      "status": "Первый игровой концепт, внешность может уточнить семья"
+    },
+    {
+      "id": "61",
+      "path": "медиа/2026-10-19/живой-космос/34-ekipazh-pyat-personazhey.png",
+      "title": "Мама Оля — простой игровой образ",
+      "object_ids": [
+        "char-mom"
+      ],
+      "added": "2026-10-19",
+      "sha256": "21ce089bc10375cff00fe20ff07e2ef98971795d0d57dbef26efb4ae764bb998",
+      "kind": "illustration",
+      "display_crop": {
+        "cols": 5,
+        "rows": 1,
+        "col": 3,
+        "row": 0
+      },
+      "creation_tool": "image_gen",
+      "status": "Первый игровой концепт, внешность может уточнить семья"
+    },
+    {
+      "id": "62",
+      "path": "медиа/2026-10-19/живой-космос/34-ekipazh-pyat-personazhey.png",
+      "title": "Ира — простой игровой образ",
+      "object_ids": [
+        "char-ira"
+      ],
+      "added": "2026-10-19",
+      "sha256": "21ce089bc10375cff00fe20ff07e2ef98971795d0d57dbef26efb4ae764bb998",
+      "kind": "illustration",
+      "display_crop": {
+        "cols": 5,
+        "rows": 1,
+        "col": 4,
+        "row": 0
+      },
+      "creation_tool": "image_gen",
+      "status": "Первый игровой концепт, внешность может уточнить семья"
     }
   ],
   "notes": [
@@ -1005,7 +2285,8 @@
     "Альфа, флаг и валюта добавлены 18 октября. Их рисунки и запись встречи 18 октября в 10:36 получены 19 октября. Число 125 обитаемых планет сохранено.",
     "Подписи на изображениях — источники сведений. Предложение сделать номиналы 50 и 500 не считается поручением или утверждённым каноном.",
     "19 октября к каждому из 12 оригиналов подобрана дорисовка. В альбоме они показаны рядом, на карте используются cover_media_id. Новые цвета и декоративные детали иллюстраций не меняют канон.",
-    "Добавлена планета Левка — «это друг Васи». Общий счёт 125 не увеличен. Три новых стилевых концепта не являются утверждённым оформлением или новыми фактами мира."
+    "Добавлена планета Левка — «это друг Васи». Общий счёт 125 не увеличен. Три новых стилевых концепта не являются утверждённым оформлением или новыми фактами мира.",
+    "Семья выбрала стиль «Живой космос». Для Art Planet принят образ спокойной песчаной плайи с несколькими арт-объектами и одной обсерваторией с несколькими телескопами. Разрушенная планета и Джудиш добавлены без выдуманных свойств; число 125 не менялось. Игровые образы пришельцев — предложения. Фото семьи используются только как референсы, не опубликованы как медиа."
   ],
   "gaps": [
     {

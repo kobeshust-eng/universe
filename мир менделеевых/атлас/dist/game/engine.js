@@ -1,0 +1,34 @@
+/* Shared deterministic rules: browser local mode and authoritative Node rooms. */
+(function(root,factory){const api=factory();if(typeof module==='object')module.exports=api;else root.Cosmos=api;})(typeof globalThis!=='undefined'?globalThis:this,function(){
+'use strict';
+const characters=[['ilya','Илья','🚀','#438bf0'],['vasya','Вася','❄️','#af6ee9'],['dad','Папа','🛸','#47b1ab'],['mom','Мама','🌷','#e77d9b'],['ira','Ира','🎨','#e59b45'],['tanya','Бабушка Таня','🌻','#bc963f'],['galya','Бабушка Галя','🌺','#ba6f9e'],['misha-pool','Дедушка Миша · с бассейном','🏊','#379eb7'],['misha-galya','Дедушка Миша · с бабушкой Галей','🌳','#7aa352'],['levka','Лёвка','⭐','#8389d9'],['anya','Аня Менделеева','🌼','#d48fba'],['artem','Артём Котов','🪁','#6e9fca'],['nadezhda','Надежда Менделеева','🌱','#82b69b'],['ariel','Ариэль · Джудиш','✨','#bf9cda'],['alpha-alien','Луми · Альфа','🪼','#43c8d2'],['jupiter-alien','Облачник · Юпитер','☁️','#dba06b'],['mars-alien','Искорик · Марс','🦊','#f08365']];
+const planets=[{id:'earth',name:'Земля',icon:'🌍',type:'collect',title:'Соберите звёздную почту',hint:'Двигайтесь к светящимся посылкам. Соберите их все — отправимся дальше!',color:'#85d5af'},{id:'alpha',name:'Альфа',icon:'🫧',type:'deliver',title:'Зарядите 14 шаров',hint:'Возьмите один модуль в центре и отнесите к любому незаряженному шару. Можно помогать друг другу.',color:'#72d5e4'},{id:'mars',name:'Марс',icon:'🔴',type:'memory',title:'Эхо Марса',hint:'Посмотрите последовательность огней. Повторите её вместе, по очереди нажимая цветные кнопки.',color:'#efad95'},{id:'jupiter',name:'Юпитер',icon:'🪐',type:'rhythm',title:'Оркестр облаков',hint:'Нажимайте «Звук», когда светящаяся точка внутри широкой цветной полосы. Один точный звук на круг.',color:'#e3bd81'},{id:'art',name:'Art Planet',icon:'🎨',type:'paint',title:'Мозаика для телескопа',hint:'Выберите цвет и раскрасьте клетки по маленькому образцу. Каждый может рисовать свою часть!',color:'#bcaae9'}];
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+function create(){return {version:1,phase:'lobby',planet:'earth',players:[],captain:null,stars:0,visited:[],elapsed:0,travel:0,game:null,message:'Соберите экипаж и выберите планету.'};}
+function addPlayer(s,id,char){if(s.players.length>=4||s.players.some(p=>p.id===id))return false;const c=characters.find(c=>c[0]===char)||characters[s.players.length];s.players.push({id,char:c[0],ready:false,x:480+(s.players.length-1.5)*45,y:270,input:{x:0,y:0},carrying:false,paint:s.players.length%4,score:0});if(!s.captain)s.captain=id;return true;}
+function removePlayer(s,id){s.players=s.players.filter(p=>p.id!==id);if(s.captain===id)s.captain=s.players[0]?.id||null;}
+function start(s){s.phase='travel';s.travel=3;s.message='Весь экипаж летит вместе!';s.players.forEach(p=>{p.ready=false;p.input={x:0,y:0};p.carrying=false;});}
+function begin(s){s.phase='play';s.elapsed=0;const type=planets.find(p=>p.id===s.planet).type;const n=s.players.length;const g=s.game={type,progress:0,target:0,round:0,flash:null,feedback:''};s.players.forEach((p,i)=>{p.x=400+i*48;p.y=270;p.score=0;});
+if(type==='collect'){g.target=8+4*n;g.items=Array.from({length:g.target},(_,i)=>({x:110+(i*137)%740,y:85+(i*83)%335,done:false}));}
+if(type==='deliver'){g.target=14;g.items=Array.from({length:14},(_,i)=>({x:480+350*Math.cos(i*Math.PI/7),y:260+185*Math.sin(i*Math.PI/7),done:false}));}
+if(type==='memory'){g.target=4;g.sequence=[0,2,1];g.index=0;g.showUntil=3;}
+if(type==='rhythm'){g.target=8+3*n;g.lastBeat=-1;g.pulse=0;}
+if(type==='paint'){g.target=24;g.pattern=Array.from({length:24},(_,i)=>(Math.floor(i/6)+i%6)%4);g.cells=Array(24).fill(-1);}
+}
+function finish(s){if(s.phase!=='play')return;s.phase='result';s.stars+=3;if(!s.visited.includes(s.planet))s.visited.push(s.planet);s.players.forEach(p=>p.input={x:0,y:0});s.message='Получилось! Вы сделали это вместе.';}
+function action(s,id,a){const p=s.players.find(p=>p.id===id);if(!p||!a||typeof a.type!=='string')return false;
+if(a.type==='input'){p.input={x:clamp(Number(a.x)||0,-1,1),y:clamp(Number(a.y)||0,-1,1)};return true;}
+if(a.type==='character'&&s.phase==='lobby'&&characters.some(c=>c[0]===a.char)){p.char=a.char;return true;}
+if(a.type==='ready'&&s.phase==='lobby'){p.ready=!p.ready;return true;}
+if(a.type==='planet'&&s.phase==='lobby'&&id===s.captain&&planets.some(x=>x.id===a.planet)){s.planet=a.planet;s.players.forEach(p=>p.ready=false);return true;}
+if(a.type==='launch'&&s.phase==='lobby'&&id===s.captain&&s.players.every(p=>p.ready)){start(s);return true;}
+if(a.type==='home'&&(s.phase==='result'||s.phase==='play')&&id===s.captain){s.phase='lobby';s.players.forEach(p=>{p.ready=false;p.input={x:0,y:0};});return true;}
+if(s.phase!=='play')return false;const g=s.game;
+if(a.type==='note'&&g.type==='memory'&&Number.isInteger(a.color)&&a.color>=0&&a.color<4&&s.elapsed>=g.showUntil){if(a.color===g.sequence[g.index]){g.index++;p.score++;g.feedback='Верно!';if(g.index===g.sequence.length){g.progress++;if(g.progress===g.target){finish(s);}else{g.sequence.push((g.progress*3+1)%4);g.index=0;g.showUntil=s.elapsed+g.sequence.length*.8;g.feedback='Слушаем новое эхо…';}}}else{g.index=0;g.showUntil=s.elapsed+g.sequence.length*.8;g.feedback='Попробуем ещё раз. Слушаем!';}return true;}
+if(a.type==='beat'&&g.type==='rhythm'){const beat=Math.floor(s.elapsed/2.4),phase=(s.elapsed%2.4)/2.4;if(phase>=.3&&phase<=.7&&g.lastBeat!==beat){g.lastBeat=beat;g.progress++;p.score++;g.feedback='Вместе звучит красиво!';if(g.progress>=g.target)finish(s);}else if(g.lastBeat!==beat)g.feedback='Дождитесь цветной полосы — получится!';return true;}
+if(a.type==='color'&&g.type==='paint'&&Number.isInteger(a.color)&&a.color>=0&&a.color<4){p.paint=a.color;return true;}
+if(a.type==='paint'&&g.type==='paint'&&Number.isInteger(a.cell)&&a.cell>=0&&a.cell<24){if(g.cells[a.cell]===g.pattern[a.cell])return true;g.cells[a.cell]=p.paint;if(p.paint===g.pattern[a.cell])p.score++;g.progress=g.cells.filter((c,i)=>c===g.pattern[i]).length;if(g.progress===g.target)finish(s);return true;}return false;}
+function tick(s,dt){dt=clamp(dt,0,.15);if(s.phase==='travel'){s.travel-=dt;if(s.travel<=0)begin(s);return;}if(s.phase!=='play')return;s.elapsed+=dt;const g=s.game;if(g.type==='rhythm')g.pulse=(s.elapsed%2.4)/2.4;
+if(g.type==='collect'||g.type==='deliver'){for(const p of s.players){let {x,y}=p.input;const length=Math.hypot(x,y)||1;p.x=clamp(p.x+x/Math.max(1,length)*180*dt,35,925);p.y=clamp(p.y+y/Math.max(1,length)*180*dt,35,485);if(g.type==='deliver'&&!p.carrying&&Math.hypot(p.x-480,p.y-260)<44)p.carrying=true;for(const item of g.items){if(item.done||Math.hypot(item.x-p.x,item.y-p.y)>31)continue;if(g.type==='deliver'&&!p.carrying)continue;item.done=true;p.carrying=false;g.progress++;p.score++;break;}}if(g.progress>=g.target)finish(s);}}
+return {characters,planets,create,addPlayer,removePlayer,action,tick,begin};
+});
