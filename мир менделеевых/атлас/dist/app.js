@@ -4,6 +4,9 @@ const objects=new Map(data.objects.map(o=>[o.id,o]));
 const $=s=>document.querySelector(s);
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const mediaPath=p=>'media/'+p.split('/').pop();
+const mediaById=new Map(data.media.map(m=>[m.id,m]));
+const coverFor=o=>o.cover_media_id?mediaById.get(o.cover_media_id):null;
+const orderedMedia=o=>{const cover=coverFor(o)?.path;return cover?[cover,...o.media.filter(p=>p!==cover)]:o.media;};
 let activeObject='earth', activeFilter='all';
 function panel(name){
   document.querySelectorAll('.panel').forEach(p=>p.hidden=p.id!=='panel-'+name);
@@ -17,7 +20,7 @@ $('#open-map').addEventListener('click',()=>lightbox('media/2026-10-17-карт�
 
 function showObject(id,scroll=false){
  const o=objects.get(id);if(!o)return;activeObject=id;
- $('#detail').innerHTML=`<p class="eyebrow">${esc(o.kind)}</p><h3>${esc(o.name)}</h3><p class="author">${o.author?'Автор: '+esc(o.author)+' · ':''}Записано ${esc(o.recorded.split('-').reverse().join('.'))}</p><ul>${o.facts.map(f=>`<li>${esc(f)}</li>`).join('')}</ul>${o.media.length?o.media.map(m=>`${data.media.find(item=>item.path===m)?.kind==='illustration'?'<p class="artifact-note">Дорисовка по оригиналу · художественная версия</p>':''}<button class="detail-media" data-media="${esc(m)}" aria-label="Увеличить: ${esc(o.name)}"><img src="${esc(mediaPath(m))}" alt="${esc(o.name)} — исходный артефакт"></button>`).join(''):`<div class="placeholder"><strong>＋</strong>${o.artwork_status==='awaiting_user'?'Ждём ваш рисунок.<br>Семья пришлёт его позже.':`Здесь будет ваш рисунок${o.kind==='способ управления'?' или жест':''}.<br>Пока у объекта есть история.`}</div>`}${o.open_questions.length?`<h4>Ещё придумаем</h4><ul>${o.open_questions.map(q=>`<li>${esc(q)}</li>`).join('')}</ul>`:''}${o.related.length?`<h4>Связано с</h4><div class="related">${o.related.map(r=>`<button data-object="${r}">${esc(objects.get(r).name)}</button>`).join('')}</div>`:''}`;
+ $('#detail').innerHTML=`<p class="eyebrow">${esc(o.kind)}</p><h3>${esc(o.name)}</h3><p class="author">${o.author?'Автор: '+esc(o.author)+' · ':''}Записано ${esc(o.recorded.split('-').reverse().join('.'))}</p><ul>${o.facts.map(f=>`<li>${esc(f)}</li>`).join('')}</ul>${orderedMedia(o).length?orderedMedia(o).map(m=>`${data.media.find(item=>item.path===m)?.kind==='illustration'?'<p class="artifact-note">Дорисовка по оригиналу · художественная версия</p>':''}<button class="detail-media" data-media="${esc(m)}" aria-label="Увеличить: ${esc(o.name)}"><img src="${esc(mediaPath(m))}" alt="${esc(data.media.find(item=>item.path===m)?.title||o.name)}"></button>`).join(''):`<div class="placeholder"><strong>＋</strong>${o.artwork_status==='awaiting_user'?'Ждём ваш рисунок.<br>Семья пришлёт его позже.':`Здесь будет ваш рисунок${o.kind==='способ управления'?' или жест':''}.<br>Пока у объекта есть история.`}</div>`}${o.open_questions.length?`<h4>Ещё придумаем</h4><ul>${o.open_questions.map(q=>`<li>${esc(q)}</li>`).join('')}</ul>`:''}${o.related.length?`<h4>Связано с</h4><div class="related">${o.related.map(r=>`<button data-object="${r}">${esc(objects.get(r).name)}</button>`).join('')}</div>`:''}`;
  $('#detail').querySelectorAll('[data-media]').forEach(b=>b.addEventListener('click',()=>lightbox(mediaPath(b.dataset.media),o.name)));
  $('#detail').querySelectorAll('[data-object]').forEach(b=>b.addEventListener('click',()=>showObject(b.dataset.object)));
  document.querySelectorAll('.node').forEach(n=>n.classList.toggle('selected',n.dataset.id===id));
@@ -26,7 +29,7 @@ function showObject(id,scroll=false){
 const positions={
  'earth':[200,125,'planet','Земля',54], 'jupiter':[455,70,'planet','Юпитер',39], 'mars':[455,225,'planet','Марс',33],
  'mercury':[720,70,'planet','Меркурий',25], 'foggy-albion':[800,220,'planet','Туманный Альбион',40],
- 'alpha':[600,315,'planet','Альфа',30], 'family-flag':[330,1180,'culture','Наш флаг'], 'currency':[680,1180,'culture','ВОРА'],
+ 'alpha':[600,315,'planet','Альфа',43], 'family-flag':[330,1180,'culture','Наш флаг'], 'currency':[680,1180,'culture','ВОРА'],
  'dromalogy':[330,1340,'culture','Дромалогия'], 'universal-bank':[680,1340,'culture','Всевселенный банк'], 'xbox-series-x8':[330,1500,'culture','Xbox Series X8'],
  'kot':[160,320,'planet','КОТ',34], 'dad-base':[800,355,'place','Папина база'],
  'vasya-plane':[130,490,'ship','Снежинка'], 'bmw-ultra-77':[365,510,'ship','BMW Ultra 77'],
@@ -63,24 +66,28 @@ for(const g of ghosts){const a=positions[g.parent];svgEl('path',{d:`M ${a[0]} ${
 const nodeGroup=svgEl('g',{});
 for(const [id,[x,y,category,title,r]]of Object.entries(positions)){
  const o=objects.get(id);const g=svgEl('g',{class:'node',transform:`translate(${x},${y})`,'data-id':id,'data-category':category,role:'button',tabindex:'0','aria-label':'Открыть объект: '+o.name},nodeGroup);
- if(r){
-   svgEl('circle',{r,fill:id==='alpha'?'none':'url(#grad-'+id+')',class:'body'},g);
+ const cover=coverFor(o);
+ if(cover){
+   if(r){
+     const clip=svgEl('clipPath',{id:'art-clip-'+id,clipPathUnits:'userSpaceOnUse'},defs);svgEl('circle',{cx:0,cy:0,r:r},clip);
+     svgEl('circle',{r,fill:'#f6f2e9',class:'body'},g);
+     svgEl('image',{href:mediaPath(cover.path),x:-r,y:-r,width:r*2,height:r*2,preserveAspectRatio:'xMidYMid slice','clip-path':`url(#art-clip-${id})`},g);
+     svgText(title,0,r+23,'title',g);
+   }else{
+     svgEl('rect',{x:-87,y:-50,width:174,height:100,rx:8,fill:'#f6f2e9',class:'body'},g);
+     svgEl('image',{href:mediaPath(cover.path),x:-81,y:-45,width:162,height:90,preserveAspectRatio:'xMidYMid meet'},g);
+     svgText(title,0,67,'title',g);
+   }
+ }else if(r){
+   svgEl('circle',{r,fill:'url(#grad-'+id+')',class:'body'},g);
    if(id==='jupiter'){[-13,-2,10].forEach(yy=>svgEl('path',{d:`M ${-r+4} ${yy} Q 0 ${yy+13} ${r-4} ${yy}`,stroke:'#f3d4a7','stroke-width':5,fill:'none',opacity:.28},g));}
    if(id==='earth'){svgEl('path',{d:'M -28 -21 Q -10 -40 6 -24 L 0 -3 L 22 5 L 8 28 L -10 18 L -15 0 L -30 -5 Z',fill:'#c7d1a0',opacity:.7},g);}
-   if(id==='black-holes'){svgEl('ellipse',{rx:57,ry:13,transform:'rotate(-23)',fill:'none',stroke:'#be9edb','stroke-width':3,opacity:.65},g);svgEl('circle',{r:21,fill:'#141829'},g);}
    if(id==='kot')svgText('КОТ',0,6,'title',g);
-   if(id==='alpha'){
-     [-12,0,12].forEach(xx=>svgEl('path',{d:`M ${xx} -19 L ${xx} 19`,stroke:'#a7c8e8','stroke-width':3,fill:'none'},g));
-     for(let i=0;i<14;i++){const angle=2*Math.PI*i/14;svgEl('circle',{cx:Math.cos(angle)*39,cy:Math.sin(angle)*39,r:2,fill:'#c3d8e8'},g);}
-   }
    svgText(title,0,r+23,'title',g);
    if(id==='earth')svgText('наш дом',0,r+41,'subtitle',g);
-   if(id==='black-holes')svgText('дают энергию · не вредят',0,r+41,'subtitle',g);
  }else{
-   svgEl('rect',{x:-87,y:-40,width:174,height:80,rx:9,fill:category==='energy'?'#292d47':'#20394d',class:'body'},g);
-   const m=o.media[0];
-   if(m){const clip=svgEl('clipPath',{id:'clip-'+id},defs);svgEl('rect',{x:x-76,y:y-30,width:48,height:48,rx:7},clip);svgEl('image',{href:mediaPath(m),x:-76,y:-30,width:48,height:48,preserveAspectRatio:'xMidYMid slice'},g);svgText(title,0,29,'title',g);svgText(o.author||o.kind,28,-7,'subtitle',g);}
-   else{svgText(o.artwork_status==='awaiting_user'?'+':id==='bmw-controller'?'✧':id==='dad-base'?'⌂':id==='house-mini-ships'?'20':'◉',0,-3,'glyph',g);svgText(title,0,26,'title',g);}
+   svgEl('rect',{x:-87,y:-40,width:174,height:80,rx:9,fill:'#20394d',class:'body'},g);
+   svgText(id==='dad-base'?'⌂':'＋',0,-3,'glyph',g);svgText(title,0,26,'title',g);
  }
  g.addEventListener('click',()=>{panel('map');showObject(id,window.innerWidth<800)});
  g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();showObject(id,window.innerWidth<800)}});
@@ -105,9 +112,13 @@ $('#search').addEventListener('input',e=>{
  container.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{activeFilter='all';filterMap();showObject(b.dataset.id,true)}));
 });
 function gallery(){
- $('#gallery').innerHTML=data.media.map((m,i)=>`<figure class="artifact"><button data-media="${i}" aria-label="Рассмотреть: ${esc(m.title)}"><img loading="lazy" src="${esc(mediaPath(m.path))}" alt="${esc(m.title)}"></button><figcaption><span class="artifact-no">${m.kind==='illustration'?'ДОРИСОВКА':'ОРИГИНАЛ'} ${String(i+1).padStart(2,'0')} / ${esc(m.added.split('-').reverse().join('.'))}</span><h3>${esc(m.title)}</h3>${m.kind==='illustration'?'<p class="artifact-note">Художественная версия. Новые детали ещё не приняты в мир.</p>':''}<div class="artifact-links">${m.object_ids.map(id=>`<button data-object="${id}">${esc(objects.get(id).name)} ↗</button>`).join('')}</div></figcaption></figure>`).join('');
- $('#gallery').insertAdjacentHTML('beforeend',data.objects.filter(o=>o.artwork_status==='awaiting_user').map(o=>`<figure class="artifact"><div class="placeholder"><strong>＋</strong>Ждём рисунок от семьи</div><figcaption><span class="artifact-no">МЕСТО ДЛЯ БУДУЩЕГО РИСУНКА</span><h3>${esc(o.name)}</h3><div class="artifact-links"><button data-object="${o.id}">Открыть карточку ↗</button></div></figcaption></figure>`).join(''));
- $('#gallery').querySelectorAll('[data-media]').forEach(b=>b.addEventListener('click',()=>{const m=data.media[+b.dataset.media];lightbox(mediaPath(m.path),m.title)}));
+ const originals=data.media.filter(m=>m.kind!=='illustration');
+ const picture=(m,label)=>`<div class="paired-image"><span class="pair-label">${label}</span><button data-media-id="${esc(m.id)}" aria-label="${label}: ${esc(m.title)}"><img loading="lazy" src="${esc(mediaPath(m.path))}" alt="${esc(m.title)}"></button></div>`;
+ $('#gallery').innerHTML=originals.map((m,i)=>{
+   const versions=(m.illustration_ids||[]).map(id=>mediaById.get(id)).filter(Boolean);
+   return `<article class="artifact artifact-pair"><div class="pair-heading"><span class="artifact-no">АРТЕФАКТ ${String(i+1).padStart(2,'0')}</span><h3>${esc(m.title)}</h3></div><div class="pair-images">${picture(m,'Оригинал')}${versions.map((v,n)=>picture(v,n?'Дополнительный вид':'Дорисовка')).join('')}</div><div class="pair-footer"><p class="artifact-note">По вашему оригиналу · цвета и новые детали — художественная версия.</p><div class="artifact-links">${m.object_ids.map(id=>`<button data-object="${id}">${esc(objects.get(id).name)} ↗</button>`).join('')}</div></div></article>`;
+ }).join('');
+ $('#gallery').querySelectorAll('[data-media-id]').forEach(b=>b.addEventListener('click',()=>{const m=mediaById.get(b.dataset.mediaId);lightbox(mediaPath(m.path),m.title)}));
  $('#gallery').querySelectorAll('[data-object]').forEach(b=>b.addEventListener('click',()=>{panel('map');showObject(b.dataset.object,true)}));
 }
 const gapGroups=['Все',...new Set(data.gaps.map(g=>g.group))];
