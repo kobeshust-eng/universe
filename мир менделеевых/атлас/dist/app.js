@@ -28,7 +28,7 @@ function showObject(id,scroll=false){
 }
 const positions={
  'earth':[200,125,'planet','Земля',54], 'jupiter':[455,70,'planet','Юпитер',39], 'mars':[455,225,'planet','Марс',33],
- 'mercury':[720,70,'planet','Меркурий',25], 'foggy-albion':[800,220,'planet','Туманный Альбион',40],
+ 'levka':[940,100,'planet','Левка',32], 'mercury':[720,70,'planet','Меркурий',25], 'foggy-albion':[800,220,'planet','Туманный Альбион',40],
  'alpha':[600,315,'planet','Альфа',43], 'family-flag':[330,1180,'culture','Наш флаг'], 'currency':[680,1180,'culture','ВОРА'],
  'dromalogy':[330,1340,'culture','Дромалогия'], 'universal-bank':[680,1340,'culture','Всевселенный банк'], 'xbox-series-x8':[330,1500,'culture','Xbox Series X8'],
  'kot':[160,320,'planet','КОТ',34], 'dad-base':[800,355,'place','Папина база'],
@@ -49,7 +49,7 @@ const ns='http://www.w3.org/2000/svg';
 function svgEl(tag,attrs,parent=svg){const el=document.createElementNS(ns,tag);for(const[k,v]of Object.entries(attrs))el.setAttribute(k,v);parent.appendChild(el);return el;}
 function svgText(txt,x,y,cls,parent=svg){const t=svgEl('text',{x,y,'text-anchor':'middle',class:cls},parent);t.textContent=txt;return t;}
 const defs=svgEl('defs',{});
-const colors={earth:['#77b6b0','#285b73'],jupiter:['#dec495','#ab7655'],mars:['#d78b61','#9a533c'],mercury:['#adbbc2','#606d7a'],'foggy-albion':['#d4d7d2','#708c9b'],kot:['#c0c6a3','#747f6b'],'black-holes':['#5b557c','#252138']};
+const colors={levka:['#b5c9e2','#647dab'],earth:['#77b6b0','#285b73'],jupiter:['#dec495','#ab7655'],mars:['#d78b61','#9a533c'],mercury:['#adbbc2','#606d7a'],'foggy-albion':['#d4d7d2','#708c9b'],kot:['#c0c6a3','#747f6b'],'black-holes':['#5b557c','#252138']};
 for(const[id,[a,b]]of Object.entries(colors)){const grad=svgEl('radialGradient',{id:'grad-'+id,cx:'30%',cy:'25%',r:'80%'},defs);svgEl('stop',{offset:'0%','stop-color':a},grad);svgEl('stop',{offset:'100%','stop-color':b},grad);}
 svgText('ПЛАНЕТЫ И НАШ ДОМ',180,28,'region-label');svgText('КОРАБЛИ И ПУТЕШЕСТВИЯ',215,427,'region-label');svgText('ЭНЕРГИЯ НАШЕГО МИРА',180,920,'region-label');svgText('УЧЁБА, ТЕХНОЛОГИИ И СИМВОЛЫ МИРА',500,1100,'region-label');
 const edgeGroup=svgEl('g',{});
@@ -116,7 +116,7 @@ function gallery(){
  const picture=(m,label)=>`<div class="paired-image"><span class="pair-label">${label}</span><button data-media-id="${esc(m.id)}" aria-label="${label}: ${esc(m.title)}"><img loading="lazy" src="${esc(mediaPath(m.path))}" alt="${esc(m.title)}"></button></div>`;
  $('#gallery').innerHTML=originals.map((m,i)=>{
    const versions=(m.illustration_ids||[]).map(id=>mediaById.get(id)).filter(Boolean);
-   return `<article class="artifact artifact-pair"><div class="pair-heading"><span class="artifact-no">АРТЕФАКТ ${String(i+1).padStart(2,'0')}</span><h3>${esc(m.title)}</h3></div><div class="pair-images">${picture(m,'Оригинал')}${versions.map((v,n)=>picture(v,n?'Дополнительный вид':'Дорисовка')).join('')}</div><div class="pair-footer"><p class="artifact-note">По вашему оригиналу · цвета и новые детали — художественная версия.</p><div class="artifact-links">${m.object_ids.map(id=>`<button data-object="${id}">${esc(objects.get(id).name)} ↗</button>`).join('')}</div></div></article>`;
+   return `<article class="artifact artifact-pair"><div class="pair-heading"><span class="artifact-no">АРТЕФАКТ ${String(i+1).padStart(2,'0')}</span><h3>${esc(m.title)}</h3></div><div class="pair-images">${picture(m,'Оригинал')}${versions.length?versions.map((v,n)=>picture(v,n?'Дополнительный вид':'Дорисовка')).join(''):'<div class="placeholder"><strong>＋</strong>Левка уже в четырёх концептах.<br><a href="styles/index.html">Выбираем будущий стиль ↗</a></div>'}</div><div class="pair-footer"><p class="artifact-note">По вашему оригиналу · цвета и новые детали — художественная версия.</p><div class="artifact-links">${m.object_ids.map(id=>`<button data-object="${id}">${esc(objects.get(id).name)} ↗</button>`).join('')}</div></div></article>`;
  }).join('');
  $('#gallery').querySelectorAll('[data-media-id]').forEach(b=>b.addEventListener('click',()=>{const m=mediaById.get(b.dataset.mediaId);lightbox(mediaPath(m.path),m.title)}));
  $('#gallery').querySelectorAll('[data-object]').forEach(b=>b.addEventListener('click',()=>{panel('map');showObject(b.dataset.object,true)}));
