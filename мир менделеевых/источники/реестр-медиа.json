@@ -136,5 +136,99 @@
     ],
     "creation_tool": "image_gen",
     "status": "Художественная версия только левого корабля; правая часть исключена"
+  },
+  {
+    "id": "11",
+    "path": "медиа/2026-10-19/11-дромалогия-и-альфа.png",
+    "title": "Дромалогия и Альфа с тремя океанами",
+    "object_ids": [
+      "dromalogy",
+      "alpha"
+    ],
+    "original_filename": "Дромалогия и планета Альфа с тремя океанами.png",
+    "added": "2026-10-19",
+    "meeting_date": "2026-10-18",
+    "sha256": "97a39d63c0b659f403be98ceaad033fba0481f79cc21a12aec41d6f6ee5a8404",
+    "kind": "original",
+    "author": "Илья",
+    "provenance": "Комплексный рисунок Ильи или его предоставленный семьёй фрагмент."
+  },
+  {
+    "id": "12",
+    "path": "медиа/2026-10-19/12-вора.png",
+    "title": "ВОРА — рисунок вселенской валюты",
+    "object_ids": [
+      "currency",
+      "universal-bank"
+    ],
+    "original_filename": "вселенская валюта.png",
+    "added": "2026-10-19",
+    "meeting_date": "2026-10-18",
+    "sha256": "bceadc5e7915af309fca3511b78c01b6274b4fa03025f7add1aacbe60996eba5",
+    "kind": "original",
+    "author": "Илья",
+    "provenance": "Комплексный рисунок Ильи или его предоставленный семьёй фрагмент."
+  },
+  {
+    "id": "13",
+    "path": "медиа/2026-10-19/13-символ-воры.png",
+    "title": "Символ ВОРЫ — луна и звёздочка",
+    "object_ids": [
+      "currency"
+    ],
+    "original_filename": "обозначение валюты.png",
+    "added": "2026-10-19",
+    "meeting_date": "2026-10-18",
+    "sha256": "bc749515a4c0030d0663db512137863c59209a33307bb174007126a439510c35",
+    "kind": "original",
+    "author": "Илья",
+    "provenance": "Комплексный рисунок Ильи или его предоставленный семьёй фрагмент."
+  },
+  {
+    "id": "14",
+    "path": "медиа/2026-10-19/14-xbox-series-x8.png",
+    "title": "Xbox Series X8 с выдвигающимися джойстиками",
+    "object_ids": [
+      "xbox-series-x8"
+    ],
+    "original_filename": "Хбокс .png",
+    "added": "2026-10-19",
+    "meeting_date": "2026-10-18",
+    "sha256": "01a31e50b89c7a1c7e161d88fc5f11f5e607cecd2eaad313a51b2d7c4412bad2",
+    "kind": "original",
+    "author": "Илья",
+    "provenance": "Комплексный рисунок Ильи или его предоставленный семьёй фрагмент."
+  },
+  {
+    "id": "15",
+    "path": "медиа/2026-10-19/15-флаг.jpeg",
+    "title": "Флаг Менделеевых",
+    "object_ids": [
+      "family-flag"
+    ],
+    "original_filename": "флаг.jpeg",
+    "added": "2026-10-19",
+    "meeting_date": "2026-10-18",
+    "sha256": "43678230240363f3a0c9f7b46e942c7f40cc0df7376949f44b1a3cd15ab3e318",
+    "kind": "original"
+  },
+  {
+    "id": "16",
+    "path": "медиа/2026-10-19/16-комплексный-рисунок-ильи.jpeg",
+    "title": "Комплексный рисунок Ильи",
+    "object_ids": [
+      "dromalogy",
+      "alpha",
+      "currency",
+      "universal-bank",
+      "xbox-series-x8"
+    ],
+    "original_filename": "комплексный рисунок Ильи.jpeg",
+    "added": "2026-10-19",
+    "meeting_date": "2026-10-18",
+    "sha256": "a4290cc1acbb1b005bb6b4a029b984c3c32055eb9fcad9ecacdbd6e4f0ec6511",
+    "kind": "original",
+    "author": "Илья",
+    "provenance": "Комплексный рисунок Ильи или его предоставленный семьёй фрагмент."
   }
 ]

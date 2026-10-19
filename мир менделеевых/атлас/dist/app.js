@@ -26,7 +26,8 @@ function showObject(id,scroll=false){
 const positions={
  'earth':[200,125,'planet','Земля',54], 'jupiter':[455,70,'planet','Юпитер',39], 'mars':[455,225,'planet','Марс',33],
  'mercury':[720,70,'planet','Меркурий',25], 'foggy-albion':[800,220,'planet','Туманный Альбион',40],
- 'alpha':[600,315,'planet','Альфа',30], 'family-flag':[330,1180,'culture','Наш флаг'], 'currency':[680,1180,'culture','Наша валюта'],
+ 'alpha':[600,315,'planet','Альфа',30], 'family-flag':[330,1180,'culture','Наш флаг'], 'currency':[680,1180,'culture','ВОРА'],
+ 'dromalogy':[330,1340,'culture','Дромалогия'], 'universal-bank':[680,1340,'culture','Всевселенный банк'], 'xbox-series-x8':[330,1500,'culture','Xbox Series X8'],
  'kot':[160,320,'planet','КОТ',34], 'dad-base':[800,355,'place','Папина база'],
  'vasya-plane':[130,490,'ship','Снежинка'], 'bmw-ultra-77':[365,510,'ship','BMW Ultra 77'],
  'mini-bmw':[150,650,'ship','Мини-BMW'], 'bmw-controller':[390,690,'ship','Мысль и мановение'],
@@ -40,19 +41,22 @@ const ghosts=[
  {id:'gap-18',parent:'flying-house',x:850,y:785,name:'Комнаты дома'},
  {id:'gap-14',parent:'vasya-plane',x:140,y:810,name:'Эмблема Снежинки'}
 ];
-const svg=$('#graph');svg.setAttribute('viewBox','0 0 1000 1260');
+const svg=$('#graph');svg.setAttribute('viewBox','0 0 1000 1580');
 const ns='http://www.w3.org/2000/svg';
 function svgEl(tag,attrs,parent=svg){const el=document.createElementNS(ns,tag);for(const[k,v]of Object.entries(attrs))el.setAttribute(k,v);parent.appendChild(el);return el;}
 function svgText(txt,x,y,cls,parent=svg){const t=svgEl('text',{x,y,'text-anchor':'middle',class:cls},parent);t.textContent=txt;return t;}
 const defs=svgEl('defs',{});
 const colors={earth:['#77b6b0','#285b73'],jupiter:['#dec495','#ab7655'],mars:['#d78b61','#9a533c'],mercury:['#adbbc2','#606d7a'],'foggy-albion':['#d4d7d2','#708c9b'],kot:['#c0c6a3','#747f6b'],'black-holes':['#5b557c','#252138']};
 for(const[id,[a,b]]of Object.entries(colors)){const grad=svgEl('radialGradient',{id:'grad-'+id,cx:'30%',cy:'25%',r:'80%'},defs);svgEl('stop',{offset:'0%','stop-color':a},grad);svgEl('stop',{offset:'100%','stop-color':b},grad);}
-svgText('ПЛАНЕТЫ И НАШ ДОМ',180,28,'region-label');svgText('КОРАБЛИ И ПУТЕШЕСТВИЯ',215,427,'region-label');svgText('ЭНЕРГИЯ НАШЕГО МИРА',180,920,'region-label');svgText('НАШ ФЛАГ И ВАЛЮТА · ЖДЁМ РИСУНКИ',500,1100,'region-label');
+svgText('ПЛАНЕТЫ И НАШ ДОМ',180,28,'region-label');svgText('КОРАБЛИ И ПУТЕШЕСТВИЯ',215,427,'region-label');svgText('ЭНЕРГИЯ НАШЕГО МИРА',180,920,'region-label');svgText('УЧЁБА, ТЕХНОЛОГИИ И СИМВОЛЫ МИРА',500,1100,'region-label');
 const edgeGroup=svgEl('g',{});
 for(const e of data.relationships){
  const a=positions[e.source],b=positions[e.target];if(!a||!b)continue;
- const line=svgEl('path',{d:`M ${a[0]} ${a[1]} Q ${(a[0]+b[0])/2+20} ${(a[1]+b[1])/2-12} ${b[0]} ${b[1]}`,class:'edge','data-source':e.source,'data-target':e.target},edgeGroup);
- if(e.label!=='пример в мире')svgText(e.label,(a[0]+b[0])/2,(a[1]+b[1])/2-8,'edge-label',edgeGroup);
+ const distant=Math.abs(a[1]-b[1])>700;
+ const route=distant?`M ${a[0]} ${a[1]} C 25 ${a[1]} 25 ${b[1]} ${b[0]} ${b[1]}`:`M ${a[0]} ${a[1]} Q ${(a[0]+b[0])/2+20} ${(a[1]+b[1])/2-12} ${b[0]} ${b[1]}`;
+ const line=svgEl('path',{d:route,class:'edge','data-source':e.source,'data-target':e.target},edgeGroup);
+ const edgeTitle=svgEl('title',{},line);edgeTitle.textContent=objects.get(e.source).name+' → '+e.label+' → '+objects.get(e.target).name;
+ if(!distant&&e.label!=='пример в мире')svgText(e.label,(a[0]+b[0])/2,(a[1]+b[1])/2-8,'edge-label',edgeGroup);
 }
 const ghostEdges=svgEl('g',{'data-ghost':'true'});
 for(const g of ghosts){const a=positions[g.parent];svgEl('path',{d:`M ${a[0]} ${a[1]} L ${g.x} ${g.y}`,class:'edge ghost-edge'},ghostEdges);}
@@ -65,14 +69,17 @@ for(const [id,[x,y,category,title,r]]of Object.entries(positions)){
    if(id==='earth'){svgEl('path',{d:'M -28 -21 Q -10 -40 6 -24 L 0 -3 L 22 5 L 8 28 L -10 18 L -15 0 L -30 -5 Z',fill:'#c7d1a0',opacity:.7},g);}
    if(id==='black-holes'){svgEl('ellipse',{rx:57,ry:13,transform:'rotate(-23)',fill:'none',stroke:'#be9edb','stroke-width':3,opacity:.65},g);svgEl('circle',{r:21,fill:'#141829'},g);}
    if(id==='kot')svgText('КОТ',0,6,'title',g);
-   if(id==='alpha')svgText('+',0,7,'glyph',g);
+   if(id==='alpha'){
+     [-12,0,12].forEach(xx=>svgEl('path',{d:`M ${xx} -19 L ${xx} 19`,stroke:'#a7c8e8','stroke-width':3,fill:'none'},g));
+     for(let i=0;i<14;i++){const angle=2*Math.PI*i/14;svgEl('circle',{cx:Math.cos(angle)*39,cy:Math.sin(angle)*39,r:2,fill:'#c3d8e8'},g);}
+   }
    svgText(title,0,r+23,'title',g);
    if(id==='earth')svgText('наш дом',0,r+41,'subtitle',g);
    if(id==='black-holes')svgText('дают энергию · не вредят',0,r+41,'subtitle',g);
  }else{
    svgEl('rect',{x:-87,y:-40,width:174,height:80,rx:9,fill:category==='energy'?'#292d47':'#20394d',class:'body'},g);
    const m=o.media[0];
-   if(m){const clip=svgEl('clipPath',{id:'clip-'+id},defs);svgEl('rect',{x:x-76,y:y-30,width:48,height:48,rx:7},clip);svgEl('image',{href:mediaPath(m),x:-76,y:-30,width:48,height:48,preserveAspectRatio:'xMidYMid slice'},g);svgText(title,0,29,'title',g);svgText(o.author||'источник энергии',28,-7,'subtitle',g);}
+   if(m){const clip=svgEl('clipPath',{id:'clip-'+id},defs);svgEl('rect',{x:x-76,y:y-30,width:48,height:48,rx:7},clip);svgEl('image',{href:mediaPath(m),x:-76,y:-30,width:48,height:48,preserveAspectRatio:'xMidYMid slice'},g);svgText(title,0,29,'title',g);svgText(o.author||o.kind,28,-7,'subtitle',g);}
    else{svgText(o.artwork_status==='awaiting_user'?'+':id==='bmw-controller'?'✧':id==='dad-base'?'⌂':id==='house-mini-ships'?'20':'◉',0,-3,'glyph',g);svgText(title,0,26,'title',g);}
  }
  g.addEventListener('click',()=>{panel('map');showObject(id,window.innerWidth<800)});
@@ -112,6 +119,11 @@ function renderGaps(group){
 }
 document.querySelectorAll('#gap-filters button').forEach(b=>b.addEventListener('click',()=>renderGaps(b.dataset.group)));
 const roles=[
+ ['Альфа','Я очень красивая технологичная планета. У меня три океана. Моё силовое поле создают 14 шаров.'],
+ ['ВОРА','Я вселенская валюта. Мой знак — луна и звёздочка. Меня бывает 1, 10 и 100.'],
+ ['Xbox Series X8','Я устройство с Земли. У меня выдвигаются джойстики.'],
+ ['Дромалогия','Я школьный предмет. Помогаю выбрать будущее. В 7 классе со мной выбирают планету для изучения.'],
+ ['Наш флаг','На мне Менделеев, 125 планет и четыре элемента: A1, HO, HE, RO.'],
  ['Летающий дом','Во мне можно жить. Я летаю между планетами. Во мне двадцать маленьких кораблей.'],
  ['Мини-BMW','Я маленькая. Путешествую внутри большой BMW. Помогаю исследовать отдельную планету.'],
  ['Снежинка — самолёт Васи','Меня слепила Вася. Я синий. У меня есть крылья.'],
