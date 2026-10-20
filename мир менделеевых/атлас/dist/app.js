@@ -17,6 +17,11 @@ function paintCrop(el,m,c){
 }
 function artHTML(m,crop=null,extra=''){
  if(!m)return '';
+ if(validCrop(crop)&&crop.portrait){
+  const height=1/Number(crop.aspect_ratio||1);
+  const href=esc(mediaPath(m.path));
+  return `<svg class="portrait-art ${extra}" viewBox="${crop.col} 0 1 ${height}" role="img" aria-label="${esc(m.title)}" preserveAspectRatio="xMidYMid meet"><defs><clipPath id="portrait-${m.id}"><rect x="${crop.col}" y="0" width="1" height="${height}"/></clipPath></defs><image href="${href}" x="0" y="0" width="${crop.cols}" height="${height}" preserveAspectRatio="none" clip-path="url(#portrait-${m.id})"/></svg>`;
+ }
  if(validCrop(crop))return `<span class="crop-art ${extra}" data-art-id="${esc(m.id)}" data-crop="${esc(JSON.stringify(crop))}" role="img" aria-label="${esc(m.title)}"></span>`;
  return `<img class="${extra}" loading="lazy" src="${esc(mediaPath(m.path))}" alt="${esc(m.title)}">`;
 }
@@ -166,7 +171,7 @@ function gallery(){
 }
 function characters(){
  const people=data.objects.filter(o=>/персонаж|инопланетянин/.test(o.kind));
- $('#characters').innerHTML=people.length?people.map(o=>{const m=coverFor(o);return `<button class="character-card" data-object="${esc(o.id)}"><span class="character-picture">${m?artHTML(m,cropFor(m,o)):'<span class="character-placeholder" aria-hidden="true">✦</span>'}</span><span class="character-copy"><strong>${esc(o.name)}</strong><small>${esc((o.facts||[])[0]||'Знакомимся с новым героем.')}</small></span></button>`;}).join(''):'<div class="placeholder"><strong>✦</strong>Здесь собирается наш экипаж. Образы персонажей скоро появятся.</div>';
+ $('#characters').innerHTML=people.length?people.map(o=>{const m=coverFor(o);return `<button class="character-card" data-object="${esc(o.id)}"><span class="character-picture">${m?artHTML(m,cropFor(m,o)):'<span class="character-placeholder" aria-hidden="true">✦</span>'}</span><span class="character-copy"><strong>${esc(o.name)}</strong><small>${esc(o.game_trait||(o.facts||[])[0]||'Знакомимся с новым героем.')}</small></span></button>`;}).join(''):'<div class="placeholder"><strong>✦</strong>Здесь собирается наш экипаж. Образы персонажей скоро появятся.</div>';
  paintArts($('#characters'));
  $('#characters').querySelectorAll('[data-object]').forEach(b=>b.addEventListener('click',()=>{panel('map');showObject(b.dataset.object,true)}));
 }

@@ -2,7 +2,7 @@
   "title": "Вселенная Менделеевых",
   "world_year": 65382,
   "inhabited_planets": 125,
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "objects": [
     {
       "id": "earth",
@@ -228,17 +228,22 @@
         "bmw-ultra-77"
       ],
       "media": [
+        "медиа/2026-10-20/скины/vehicle-mini-bmw.svg",
+        "медиа/2026-10-20/персонажи/06-транспорт.jpg",
         "медиа/2026-10-17/06-bmw-и-мини-bmw.png",
         "медиа/2026-10-18/07-bmw-дорисовка.png",
         "медиа/2026-10-19/живой-космос/31-transport-list.png"
       ],
-      "cover_media_id": "41",
+      "cover_media_id": "84",
       "cover_crop": {
-        "cols": 3,
-        "rows": 2,
-        "col": 2,
-        "row": 0
-      }
+        "cols": 7,
+        "rows": 1,
+        "col": 0,
+        "row": 0,
+        "aspect_ratio": 3,
+        "portrait": true
+      },
+      "artwork_status": "game_vehicle_2026_10_20"
     },
     {
       "id": "bmw-controller",
@@ -283,6 +288,7 @@
         "house-mini-ships"
       ],
       "media": [
+        "медиа/2026-10-20/скины/vehicle-mini-house.svg",
         "медиа/2026-10-17/04-летающий-дом-и-мини-корабль.png",
         "медиа/2026-10-18/08-летающий-дом-дорисовка.png",
         "медиа/2026-10-19/живой-космос/31-transport-list.png"
@@ -314,17 +320,21 @@
         "flying-house"
       ],
       "media": [
+        "медиа/2026-10-20/персонажи/06-транспорт.jpg",
         "медиа/2026-10-17/04-летающий-дом-и-мини-корабль.png",
         "медиа/2026-10-18/08-летающий-дом-дорисовка.png",
         "медиа/2026-10-19/живой-космос/31-transport-list.png"
       ],
-      "cover_media_id": "44",
+      "cover_media_id": "86",
       "cover_crop": {
-        "cols": 3,
-        "rows": 2,
+        "cols": 7,
+        "rows": 1,
         "col": 2,
-        "row": 1
-      }
+        "row": 0,
+        "aspect_ratio": 3,
+        "portrait": true
+      },
+      "artwork_status": "game_vehicle_2026_10_20"
     },
     {
       "id": "vasya-plane",
@@ -342,18 +352,23 @@
       ],
       "related": [],
       "media": [
+        "медиа/2026-10-20/скины/vehicle-snowflake.svg",
+        "медиа/2026-10-20/персонажи/06-транспорт.jpg",
         "медиа/2026-10-17/01-самолёт-васи.png",
         "медиа/2026-10-18/09-самолёт-васи-дорисовка.png",
         "медиа/2026-10-19/дорисовки/19-снежинка-с-именем.png",
         "медиа/2026-10-19/живой-космос/31-transport-list.png"
       ],
-      "cover_media_id": "42",
+      "cover_media_id": "87",
       "cover_crop": {
-        "cols": 3,
-        "rows": 2,
-        "col": 0,
-        "row": 1
-      }
+        "cols": 7,
+        "rows": 1,
+        "col": 3,
+        "row": 0,
+        "aspect_ratio": 3,
+        "portrait": true
+      },
+      "artwork_status": "game_vehicle_2026_10_20"
     },
     {
       "id": "black-holes",
@@ -799,17 +814,13 @@
       ],
       "related": [],
       "media": [
-        "медиа/2026-10-19/живой-космос/34-ekipazh-pyat-personazhey.png"
+        "медиа/2026-10-20/скины/skin-ilya.svg"
       ],
-      "artwork_status": "initial_game_concept",
-      "artwork_note": "Первая упрощённая игровая иллюстрация; семья может уточнить сходство.",
-      "cover_media_id": "58",
-      "cover_crop": {
-        "cols": 5,
-        "rows": 1,
-        "col": 0,
-        "row": 0
-      }
+      "artwork_status": "anonymous_game_skin",
+      "artwork_note": "Анонимный игровой скин: узнаются рост, причёска, одежда и аксессуар; лицо без черт.",
+      "cover_media_id": "164",
+      "game_outfit": "Лаймовая футболка, синяя куртка, очки пилота",
+      "game_trait": "Очки пилота и значок мини-BMW"
     },
     {
       "id": "char-vasya",
@@ -825,69 +836,57 @@
       ],
       "related": [],
       "media": [
-        "медиа/2026-10-19/живой-космос/34-ekipazh-pyat-personazhey.png"
+        "медиа/2026-10-20/скины/skin-vasya.svg"
       ],
-      "artwork_status": "initial_game_concept",
-      "artwork_note": "Первая упрощённая игровая иллюстрация; семья может уточнить сходство.",
-      "cover_media_id": "59",
-      "cover_crop": {
-        "cols": 5,
-        "rows": 1,
-        "col": 1,
-        "row": 0
-      }
+      "artwork_status": "anonymous_game_skin",
+      "artwork_note": "Анонимный игровой скин: узнаются рост, причёска, одежда и аксессуар; лицо без черт.",
+      "cover_media_id": "165",
+      "game_outfit": "Розовый костюм Hello Kitty, балетки",
+      "game_trait": "Заколка-снежинка"
     },
     {
       "id": "char-dad",
-      "name": "Папа Яша",
+      "name": "Яша",
       "kind": "персонаж",
       "author": null,
       "recorded": "2026-10-19",
       "facts": [
-        "Папа нарисовал летающий дом."
+        "Яша нарисовал летающий дом."
       ],
       "open_questions": [
         "Какой будет внешний вид и особый игровой жест?"
       ],
       "related": [],
       "media": [
-        "медиа/2026-10-19/живой-космос/34-ekipazh-pyat-personazhey.png"
+        "медиа/2026-10-20/скины/skin-dad.svg"
       ],
-      "artwork_status": "initial_game_concept",
-      "artwork_note": "Первая упрощённая игровая иллюстрация; семья может уточнить сходство.",
-      "cover_media_id": "60",
-      "cover_crop": {
-        "cols": 5,
-        "rows": 1,
-        "col": 2,
-        "row": 0
-      }
+      "artwork_status": "anonymous_game_skin",
+      "artwork_note": "Анонимный игровой скин: узнаются рост, причёска, одежда и аксессуар; лицо без черт.",
+      "cover_media_id": "166",
+      "game_outfit": "Белая футболка, зелёный жилет, свободные брюки",
+      "game_trait": "Борода и знак летающего дома"
     },
     {
       "id": "char-mom",
-      "name": "Мама Оля",
+      "name": "Оля",
       "kind": "персонаж",
       "author": null,
       "recorded": "2026-10-19",
       "facts": [
-        "Мама — персонаж семейной игры."
+        "Оля — персонаж семейной игры."
       ],
       "open_questions": [
         "Какой будет внешний вид и особый игровой жест?"
       ],
       "related": [],
       "media": [
-        "медиа/2026-10-19/живой-космос/34-ekipazh-pyat-personazhey.png"
+        "медиа/2026-10-20/скины/skin-mom.svg"
       ],
-      "artwork_status": "initial_game_concept",
-      "artwork_note": "Первая упрощённая игровая иллюстрация; семья может уточнить сходство.",
-      "cover_media_id": "61",
-      "cover_crop": {
-        "cols": 5,
-        "rows": 1,
-        "col": 3,
-        "row": 0
-      }
+      "artwork_status": "anonymous_game_skin",
+      "artwork_note": "Анонимный игровой скин: узнаются рост, причёска, одежда и аксессуар; лицо без черт.",
+      "cover_media_id": "167",
+      "game_outfit": "Розовая блуза, синие брюки, оранжевый шарф",
+      "game_trait": "Оранжевый шарф"
     },
     {
       "id": "char-ira",
@@ -903,17 +902,13 @@
       ],
       "related": [],
       "media": [
-        "медиа/2026-10-19/живой-космос/34-ekipazh-pyat-personazhey.png"
+        "медиа/2026-10-20/скины/skin-ira.svg"
       ],
-      "artwork_status": "initial_game_concept",
-      "artwork_note": "Первая упрощённая игровая иллюстрация; семья может уточнить сходство.",
-      "cover_media_id": "62",
-      "cover_crop": {
-        "cols": 5,
-        "rows": 1,
-        "col": 4,
-        "row": 0
-      }
+      "artwork_status": "anonymous_game_skin",
+      "artwork_note": "Анонимный игровой скин: узнаются рост, причёска, одежда и аксессуар; лицо без черт.",
+      "cover_media_id": "168",
+      "game_outfit": "Чёрная короткая куртка и юбка, ремень Diesel, чёрные казаки",
+      "game_trait": "Серебряная D-пряжка и казаки"
     },
     {
       "id": "char-tanya",
@@ -928,9 +923,14 @@
         "Какой будет внешний вид и особый игровой жест?"
       ],
       "related": [],
-      "media": [],
-      "artwork_status": "awaiting_user",
-      "artwork_note": "Игровой образ будет простым; фото внешности не публикуем как карточку персонажа."
+      "media": [
+        "медиа/2026-10-20/скины/skin-tanya.svg"
+      ],
+      "artwork_status": "anonymous_game_skin",
+      "artwork_note": "Анонимный игровой скин: узнаются рост, причёска, одежда и аксессуар; лицо без черт.",
+      "cover_media_id": "169",
+      "game_outfit": "Розовая клетчатая рубашка, широкие брюки",
+      "game_trait": "Чёрные квадратные очки и зонт"
     },
     {
       "id": "char-galya",
@@ -945,9 +945,14 @@
         "Какой будет внешний вид и особый игровой жест?"
       ],
       "related": [],
-      "media": [],
-      "artwork_status": "awaiting_user",
-      "artwork_note": "Игровой образ будет простым; фото внешности не публикуем как карточку персонажа."
+      "media": [
+        "медиа/2026-10-20/скины/skin-galya.svg"
+      ],
+      "artwork_status": "anonymous_game_skin",
+      "artwork_note": "Анонимный игровой скин: узнаются рост, причёска, одежда и аксессуар; лицо без черт.",
+      "cover_media_id": "170",
+      "game_outfit": "Лиловое платье, бирюзовый кардиган",
+      "game_trait": "Брошь-цветок"
     },
     {
       "id": "char-misha-pool",
@@ -962,9 +967,14 @@
         "Какой будет внешний вид и особый игровой жест?"
       ],
       "related": [],
-      "media": [],
-      "artwork_status": "awaiting_user",
-      "artwork_note": "Игровой образ будет простым; фото внешности не публикуем как карточку персонажа."
+      "media": [
+        "медиа/2026-10-20/скины/skin-misha-pool.svg"
+      ],
+      "artwork_status": "anonymous_game_skin",
+      "artwork_note": "Анонимный игровой скин: узнаются рост, причёска, одежда и аксессуар; лицо без черт.",
+      "cover_media_id": "171",
+      "game_outfit": "Оранжевая спортивная куртка, тёмные брюки",
+      "game_trait": "Лыжные очки и значок бассейна"
     },
     {
       "id": "char-misha-galya",
@@ -979,9 +989,14 @@
         "Какой будет внешний вид и особый игровой жест?"
       ],
       "related": [],
-      "media": [],
-      "artwork_status": "awaiting_user",
-      "artwork_note": "Игровой образ будет простым; фото внешности не публикуем как карточку персонажа."
+      "media": [
+        "медиа/2026-10-20/скины/skin-misha-galya.svg"
+      ],
+      "artwork_status": "anonymous_game_skin",
+      "artwork_note": "Анонимный игровой скин: узнаются рост, причёска, одежда и аксессуар; лицо без черт.",
+      "cover_media_id": "172",
+      "game_outfit": "Песочный жилет, синие брюки",
+      "game_trait": "Посох со звездой"
     },
     {
       "id": "char-levka",
@@ -998,9 +1013,14 @@
       "related": [
         "levka"
       ],
-      "media": [],
-      "artwork_status": "awaiting_user",
-      "artwork_note": "Игровой образ будет простым; фото внешности не публикуем как карточку персонажа."
+      "media": [
+        "медиа/2026-10-20/скины/skin-levka.svg"
+      ],
+      "artwork_status": "anonymous_game_skin",
+      "artwork_note": "Анонимный игровой скин: узнаются рост, причёска, одежда и аксессуар; лицо без черт.",
+      "cover_media_id": "173",
+      "game_outfit": "Бирюзовая куртка, оранжевый шарф",
+      "game_trait": "Оранжевый шарф"
     },
     {
       "id": "char-anya",
@@ -1015,9 +1035,14 @@
         "Какой будет внешний вид и особый игровой жест?"
       ],
       "related": [],
-      "media": [],
-      "artwork_status": "awaiting_user",
-      "artwork_note": "Игровой образ будет простым; фото внешности не публикуем как карточку персонажа."
+      "media": [
+        "медиа/2026-10-20/скины/skin-anya.svg"
+      ],
+      "artwork_status": "anonymous_game_skin",
+      "artwork_note": "Анонимный игровой скин: узнаются рост, причёска, одежда и аксессуар; лицо без черт.",
+      "cover_media_id": "174",
+      "game_outfit": "Терракотовый жакет, тёмные брюки",
+      "game_trait": "Круглый кулон"
     },
     {
       "id": "char-artem",
@@ -1032,9 +1057,14 @@
         "Какой будет внешний вид и особый игровой жест?"
       ],
       "related": [],
-      "media": [],
-      "artwork_status": "awaiting_user",
-      "artwork_note": "Игровой образ будет простым; фото внешности не публикуем как карточку персонажа."
+      "media": [
+        "медиа/2026-10-20/скины/skin-artem.svg"
+      ],
+      "artwork_status": "anonymous_game_skin",
+      "artwork_note": "Анонимный игровой скин: узнаются рост, причёска, одежда и аксессуар; лицо без черт.",
+      "cover_media_id": "175",
+      "game_outfit": "Синяя куртка, светлые брюки",
+      "game_trait": "Значок кота"
     },
     {
       "id": "char-nadezhda",
@@ -1043,15 +1073,22 @@
       "author": null,
       "recorded": "2026-10-19",
       "facts": [
-        "Надежда Менделеева — персонаж семейной игры; её муж Ариэль."
+        "Надежда Менделеева — персонаж семейной игры; её муж Ариэль. Они живут на планете Джудиш."
       ],
       "open_questions": [
         "Какой будет внешний вид и особый игровой жест?"
       ],
-      "related": [],
-      "media": [],
-      "artwork_status": "awaiting_user",
-      "artwork_note": "Игровой образ будет простым; фото внешности не публикуем как карточку персонажа."
+      "related": [
+        "judish"
+      ],
+      "media": [
+        "медиа/2026-10-20/скины/skin-nadezhda.svg"
+      ],
+      "artwork_status": "anonymous_game_skin",
+      "artwork_note": "Анонимный игровой скин: узнаются рост, причёска, одежда и аксессуар; лицо без черт.",
+      "cover_media_id": "176",
+      "game_outfit": "Светло-зелёное платье-жакет, серебряные кеды",
+      "game_trait": "Знак Джудиш"
     },
     {
       "id": "char-ariel",
@@ -1060,7 +1097,7 @@
       "author": null,
       "recorded": "2026-10-19",
       "facts": [
-        "Ариэль — муж Надежды Менделеевой, с планеты Джудиш."
+        "Ариэль — муж Надежды Менделеевой. Они живут на планете Джудиш."
       ],
       "open_questions": [
         "Какой будет внешний вид и особый игровой жест?"
@@ -1068,9 +1105,14 @@
       "related": [
         "judish"
       ],
-      "media": [],
-      "artwork_status": "awaiting_user",
-      "artwork_note": "Игровой образ будет простым; фото внешности не публикуем как карточку персонажа."
+      "media": [
+        "медиа/2026-10-20/скины/skin-ariel.svg"
+      ],
+      "artwork_status": "anonymous_game_skin",
+      "artwork_note": "Анонимный игровой скин: узнаются рост, причёска, одежда и аксессуар; лицо без черт.",
+      "cover_media_id": "177",
+      "game_outfit": "Сиреневый жилет, тёмные брюки",
+      "game_trait": "Серебряная прядь и знак Джудиш"
     },
     {
       "id": "alien-alpha",
@@ -1088,16 +1130,14 @@
         "alpha"
       ],
       "media": [
-        "медиа/2026-10-19/живой-космос/33-inoplanetyane-list.png"
+        "медиа/2026-10-20/скины/skin-alpha-alien.svg"
       ],
       "concept_only": true,
-      "cover_media_id": "55",
-      "cover_crop": {
-        "cols": 3,
-        "rows": 1,
-        "col": 0,
-        "row": 0
-      }
+      "cover_media_id": "182",
+      "artwork_status": "anonymous_game_skin",
+      "artwork_note": "Анонимный игровой скин: узнаются рост, причёска, одежда и аксессуар; лицо без черт.",
+      "game_outfit": "Бирюзовое светящееся тело",
+      "game_trait": "14 световых точек"
     },
     {
       "id": "alien-jupiter",
@@ -1115,16 +1155,14 @@
         "jupiter"
       ],
       "media": [
-        "медиа/2026-10-19/живой-космос/33-inoplanetyane-list.png"
+        "медиа/2026-10-20/скины/skin-jupiter-alien.svg"
       ],
       "concept_only": true,
-      "cover_media_id": "56",
-      "cover_crop": {
-        "cols": 3,
-        "rows": 1,
-        "col": 1,
-        "row": 0
-      }
+      "cover_media_id": "183",
+      "artwork_status": "anonymous_game_skin",
+      "artwork_note": "Анонимный игровой скин: узнаются рост, причёска, одежда и аксессуар; лицо без черт.",
+      "game_outfit": "Облачное тело с полосами Юпитера",
+      "game_trait": "Облачные усики"
     },
     {
       "id": "alien-mars",
@@ -1142,16 +1180,214 @@
         "mars"
       ],
       "media": [
-        "медиа/2026-10-19/живой-космос/33-inoplanetyane-list.png"
+        "медиа/2026-10-20/скины/skin-mars-alien.svg"
       ],
       "concept_only": true,
-      "cover_media_id": "57",
+      "cover_media_id": "184",
+      "artwork_status": "anonymous_game_skin",
+      "artwork_note": "Анонимный игровой скин: узнаются рост, причёска, одежда и аксессуар; лицо без черт.",
+      "game_outfit": "Терракотовый каменный мех",
+      "game_trait": "Светящийся хвост"
+    },
+    {
+      "id": "char-ulka",
+      "name": "Улька",
+      "kind": "персонаж",
+      "author": null,
+      "recorded": "2026-10-20",
+      "facts": [
+        "Улька — персонаж семейной игры."
+      ],
+      "open_questions": [
+        "Какой у героя будет любимый мир и игровой жест?"
+      ],
+      "related": [],
+      "media": [
+        "медиа/2026-10-20/скины/skin-ulka.svg"
+      ],
+      "cover_media_id": "178",
+      "artwork_status": "anonymous_game_skin",
+      "artwork_note": "Анонимный игровой скин: узнаются рост, причёска, одежда и аксессуар; лицо без черт.",
+      "game_outfit": "Розовая куртка с белыми цветами, мятные кроссовки",
+      "game_trait": "Ярко-синяя шапка"
+    },
+    {
+      "id": "char-lavrik",
+      "name": "Лаврик",
+      "kind": "персонаж",
+      "author": null,
+      "recorded": "2026-10-20",
+      "facts": [
+        "Лаврик — персонаж семейной игры."
+      ],
+      "open_questions": [
+        "Какой у героя будет любимый мир и игровой жест?"
+      ],
+      "related": [],
+      "media": [
+        "медиа/2026-10-20/скины/skin-lavrik.svg"
+      ],
+      "cover_media_id": "179",
+      "artwork_status": "anonymous_game_skin",
+      "artwork_note": "Анонимный игровой скин: узнаются рост, причёска, одежда и аксессуар; лицо без черт.",
+      "game_outfit": "Серая свободная футболка, карго-брюки",
+      "game_trait": "Белая панама"
+    },
+    {
+      "id": "char-manya",
+      "name": "Маня",
+      "kind": "персонаж",
+      "author": null,
+      "recorded": "2026-10-20",
+      "facts": [
+        "Маня — персонаж семейной игры."
+      ],
+      "open_questions": [
+        "Какой у героя будет любимый мир и игровой жест?"
+      ],
+      "related": [],
+      "media": [
+        "медиа/2026-10-20/скины/skin-manya.svg"
+      ],
+      "cover_media_id": "180",
+      "artwork_status": "anonymous_game_skin",
+      "artwork_note": "Анонимный игровой скин: узнаются рост, причёска, одежда и аксессуар; лицо без черт.",
+      "game_outfit": "Светлая фактурная куртка, тёмные брюки",
+      "game_trait": "Круглая брошь"
+    },
+    {
+      "id": "char-sanya",
+      "name": "Саня",
+      "kind": "персонаж",
+      "author": null,
+      "recorded": "2026-10-20",
+      "facts": [
+        "Саня — персонаж семейной игры."
+      ],
+      "open_questions": [
+        "Какой у героя будет любимый мир и игровой жест?"
+      ],
+      "related": [],
+      "media": [
+        "медиа/2026-10-20/скины/skin-sanya.svg"
+      ],
+      "cover_media_id": "181",
+      "artwork_status": "anonymous_game_skin",
+      "artwork_note": "Анонимный игровой скин: узнаются рост, причёска, одежда и аксессуар; лицо без черт.",
+      "game_outfit": "Оливковый худи и свободные брюки",
+      "game_trait": "Голубая полоса на рукаве"
+    },
+    {
+      "id": "unicorn",
+      "name": "Единорог",
+      "kind": "игровой транспорт",
+      "author": null,
+      "recorded": "2026-10-20",
+      "facts": [
+        "Единорог — предложенный игровой транспорт для путешествий в мире Менделеевых."
+      ],
+      "open_questions": [
+        "Как ещё работает этот транспорт?"
+      ],
+      "related": [],
+      "media": [
+        "медиа/2026-10-20/скины/vehicle-unicorn.svg",
+        "медиа/2026-10-20/персонажи/06-транспорт.jpg"
+      ],
+      "cover_media_id": "85",
       "cover_crop": {
-        "cols": 3,
+        "cols": 7,
         "rows": 1,
-        "col": 2,
-        "row": 0
-      }
+        "col": 1,
+        "row": 0,
+        "aspect_ratio": 3,
+        "portrait": true
+      },
+      "artwork_status": "game_vehicle_2026_10_20"
+    },
+    {
+      "id": "cloud-ray",
+      "name": "Облачный скат",
+      "kind": "игровой транспорт",
+      "author": null,
+      "recorded": "2026-10-20",
+      "facts": [
+        "Облачный скат — предложенный игровой транспорт для путешествий в мире Менделеевых."
+      ],
+      "open_questions": [
+        "Как ещё работает этот транспорт?"
+      ],
+      "related": [],
+      "media": [
+        "медиа/2026-10-20/скины/vehicle-cloud-ray.svg",
+        "медиа/2026-10-20/персонажи/06-транспорт.jpg"
+      ],
+      "cover_media_id": "88",
+      "cover_crop": {
+        "cols": 7,
+        "rows": 1,
+        "col": 4,
+        "row": 0,
+        "aspect_ratio": 3,
+        "portrait": true
+      },
+      "artwork_status": "game_vehicle_2026_10_20"
+    },
+    {
+      "id": "comet-scooter",
+      "name": "Комета-самокат",
+      "kind": "игровой транспорт",
+      "author": null,
+      "recorded": "2026-10-20",
+      "facts": [
+        "Комета-самокат — предложенный игровой транспорт для путешествий в мире Менделеевых."
+      ],
+      "open_questions": [
+        "Как ещё работает этот транспорт?"
+      ],
+      "related": [],
+      "media": [
+        "медиа/2026-10-20/скины/vehicle-comet-scooter.svg",
+        "медиа/2026-10-20/персонажи/06-транспорт.jpg"
+      ],
+      "cover_media_id": "89",
+      "cover_crop": {
+        "cols": 7,
+        "rows": 1,
+        "col": 5,
+        "row": 0,
+        "aspect_ratio": 3,
+        "portrait": true
+      },
+      "artwork_status": "game_vehicle_2026_10_20"
+    },
+    {
+      "id": "bubble-sail",
+      "name": "Пузырь-парус",
+      "kind": "игровой транспорт",
+      "author": null,
+      "recorded": "2026-10-20",
+      "facts": [
+        "Пузырь-парус — предложенный игровой транспорт для путешествий в мире Менделеевых."
+      ],
+      "open_questions": [
+        "Как ещё работает этот транспорт?"
+      ],
+      "related": [],
+      "media": [
+        "медиа/2026-10-20/скины/vehicle-bubble-sail.svg",
+        "медиа/2026-10-20/персонажи/06-транспорт.jpg"
+      ],
+      "cover_media_id": "90",
+      "cover_crop": {
+        "cols": 7,
+        "rows": 1,
+        "col": 6,
+        "row": 0,
+        "aspect_ratio": 3,
+        "portrait": true
+      },
+      "artwork_status": "game_vehicle_2026_10_20"
     }
   ],
   "media": [
@@ -2183,99 +2419,515 @@
       }
     },
     {
-      "id": "58",
-      "path": "медиа/2026-10-19/живой-космос/34-ekipazh-pyat-personazhey.png",
-      "title": "Илья — простой игровой образ",
+      "id": "84",
+      "path": "медиа/2026-10-20/персонажи/06-транспорт.jpg",
+      "title": "Мини-BMW — простой игровой транспорт",
+      "object_ids": [
+        "mini-bmw"
+      ],
+      "added": "2026-10-20",
+      "sha256": "342a88024a7a56a35023c6ff6b5b63c962f8b313d80355e33eb31710b5e7a364",
+      "kind": "illustration",
+      "display_crop": {
+        "cols": 7,
+        "rows": 1,
+        "col": 0,
+        "row": 0,
+        "aspect_ratio": 3,
+        "portrait": true
+      },
+      "creation_tool": "image_gen",
+      "status": "Дорисовка семейного объекта"
+    },
+    {
+      "id": "85",
+      "path": "медиа/2026-10-20/персонажи/06-транспорт.jpg",
+      "title": "Единорог — простой игровой транспорт",
+      "object_ids": [
+        "unicorn"
+      ],
+      "added": "2026-10-20",
+      "sha256": "342a88024a7a56a35023c6ff6b5b63c962f8b313d80355e33eb31710b5e7a364",
+      "kind": "illustration",
+      "display_crop": {
+        "cols": 7,
+        "rows": 1,
+        "col": 1,
+        "row": 0,
+        "aspect_ratio": 3,
+        "portrait": true
+      },
+      "creation_tool": "image_gen",
+      "status": "Новое предложение для игры"
+    },
+    {
+      "id": "86",
+      "path": "медиа/2026-10-20/персонажи/06-транспорт.jpg",
+      "title": "Один мини-дом из набора Яши — простой игровой транспорт",
+      "object_ids": [
+        "house-mini-ships"
+      ],
+      "added": "2026-10-20",
+      "sha256": "342a88024a7a56a35023c6ff6b5b63c962f8b313d80355e33eb31710b5e7a364",
+      "kind": "illustration",
+      "display_crop": {
+        "cols": 7,
+        "rows": 1,
+        "col": 2,
+        "row": 0,
+        "aspect_ratio": 3,
+        "portrait": true
+      },
+      "creation_tool": "image_gen",
+      "status": "Дорисовка семейного объекта"
+    },
+    {
+      "id": "87",
+      "path": "медиа/2026-10-20/персонажи/06-транспорт.jpg",
+      "title": "Снежинка — простой игровой транспорт",
+      "object_ids": [
+        "vasya-plane"
+      ],
+      "added": "2026-10-20",
+      "sha256": "342a88024a7a56a35023c6ff6b5b63c962f8b313d80355e33eb31710b5e7a364",
+      "kind": "illustration",
+      "display_crop": {
+        "cols": 7,
+        "rows": 1,
+        "col": 3,
+        "row": 0,
+        "aspect_ratio": 3,
+        "portrait": true
+      },
+      "creation_tool": "image_gen",
+      "status": "Дорисовка семейного объекта"
+    },
+    {
+      "id": "88",
+      "path": "медиа/2026-10-20/персонажи/06-транспорт.jpg",
+      "title": "Облачный скат — простой игровой транспорт",
+      "object_ids": [
+        "cloud-ray"
+      ],
+      "added": "2026-10-20",
+      "sha256": "342a88024a7a56a35023c6ff6b5b63c962f8b313d80355e33eb31710b5e7a364",
+      "kind": "illustration",
+      "display_crop": {
+        "cols": 7,
+        "rows": 1,
+        "col": 4,
+        "row": 0,
+        "aspect_ratio": 3,
+        "portrait": true
+      },
+      "creation_tool": "image_gen",
+      "status": "Новое предложение для игры"
+    },
+    {
+      "id": "89",
+      "path": "медиа/2026-10-20/персонажи/06-транспорт.jpg",
+      "title": "Комета-самокат — простой игровой транспорт",
+      "object_ids": [
+        "comet-scooter"
+      ],
+      "added": "2026-10-20",
+      "sha256": "342a88024a7a56a35023c6ff6b5b63c962f8b313d80355e33eb31710b5e7a364",
+      "kind": "illustration",
+      "display_crop": {
+        "cols": 7,
+        "rows": 1,
+        "col": 5,
+        "row": 0,
+        "aspect_ratio": 3,
+        "portrait": true
+      },
+      "creation_tool": "image_gen",
+      "status": "Новое предложение для игры"
+    },
+    {
+      "id": "90",
+      "path": "медиа/2026-10-20/персонажи/06-транспорт.jpg",
+      "title": "Пузырь-парус — простой игровой транспорт",
+      "object_ids": [
+        "bubble-sail"
+      ],
+      "added": "2026-10-20",
+      "sha256": "342a88024a7a56a35023c6ff6b5b63c962f8b313d80355e33eb31710b5e7a364",
+      "kind": "illustration",
+      "display_crop": {
+        "cols": 7,
+        "rows": 1,
+        "col": 6,
+        "row": 0,
+        "aspect_ratio": 3,
+        "portrait": true
+      },
+      "creation_tool": "image_gen",
+      "status": "Новое предложение для игры"
+    },
+    {
+      "id": "164",
+      "path": "медиа/2026-10-20/скины/skin-ilya.svg",
+      "title": "Илья — анонимный игровой скин",
       "object_ids": [
         "char-ilya"
       ],
-      "added": "2026-10-19",
-      "sha256": "21ce089bc10375cff00fe20ff07e2ef98971795d0d57dbef26efb4ae764bb998",
+      "added": "2026-10-20",
+      "sha256": "e7d87b8d32b85071d8f6ab94f69fcc887b8a036b749d5de8a3522517d98d2e37",
       "kind": "illustration",
-      "display_crop": {
-        "cols": 5,
-        "rows": 1,
-        "col": 0,
-        "row": 0
-      },
-      "creation_tool": "image_gen",
-      "status": "Первый игровой концепт, внешность может уточнить семья"
+      "creation_tool": "SVG",
+      "status": "Игровая фигурка без черт лица"
     },
     {
-      "id": "59",
-      "path": "медиа/2026-10-19/живой-космос/34-ekipazh-pyat-personazhey.png",
-      "title": "Вася — простой игровой образ",
+      "id": "165",
+      "path": "медиа/2026-10-20/скины/skin-vasya.svg",
+      "title": "Вася — анонимный игровой скин",
       "object_ids": [
         "char-vasya"
       ],
-      "added": "2026-10-19",
-      "sha256": "21ce089bc10375cff00fe20ff07e2ef98971795d0d57dbef26efb4ae764bb998",
+      "added": "2026-10-20",
+      "sha256": "cf3b3ceb427a0f984cf2bfc922839a01f971e23171d8161554673da168613a62",
       "kind": "illustration",
-      "display_crop": {
-        "cols": 5,
-        "rows": 1,
-        "col": 1,
-        "row": 0
-      },
-      "creation_tool": "image_gen",
-      "status": "Первый игровой концепт, внешность может уточнить семья"
+      "creation_tool": "SVG",
+      "status": "Игровая фигурка без черт лица"
     },
     {
-      "id": "60",
-      "path": "медиа/2026-10-19/живой-космос/34-ekipazh-pyat-personazhey.png",
-      "title": "Папа Яша — простой игровой образ",
+      "id": "166",
+      "path": "медиа/2026-10-20/скины/skin-dad.svg",
+      "title": "Яша — анонимный игровой скин",
       "object_ids": [
         "char-dad"
       ],
-      "added": "2026-10-19",
-      "sha256": "21ce089bc10375cff00fe20ff07e2ef98971795d0d57dbef26efb4ae764bb998",
+      "added": "2026-10-20",
+      "sha256": "c3b95021007a61da777ef75b7710c662535ce85a717542bf7466980fd9728430",
       "kind": "illustration",
-      "display_crop": {
-        "cols": 5,
-        "rows": 1,
-        "col": 2,
-        "row": 0
-      },
-      "creation_tool": "image_gen",
-      "status": "Первый игровой концепт, внешность может уточнить семья"
+      "creation_tool": "SVG",
+      "status": "Игровая фигурка без черт лица"
     },
     {
-      "id": "61",
-      "path": "медиа/2026-10-19/живой-космос/34-ekipazh-pyat-personazhey.png",
-      "title": "Мама Оля — простой игровой образ",
+      "id": "167",
+      "path": "медиа/2026-10-20/скины/skin-mom.svg",
+      "title": "Оля — анонимный игровой скин",
       "object_ids": [
         "char-mom"
       ],
-      "added": "2026-10-19",
-      "sha256": "21ce089bc10375cff00fe20ff07e2ef98971795d0d57dbef26efb4ae764bb998",
+      "added": "2026-10-20",
+      "sha256": "7acee7eef9fea8c1007b04aa9c3d90b02a68c1f16216e7294b98d0ceb8b24f38",
       "kind": "illustration",
-      "display_crop": {
-        "cols": 5,
-        "rows": 1,
-        "col": 3,
-        "row": 0
-      },
-      "creation_tool": "image_gen",
-      "status": "Первый игровой концепт, внешность может уточнить семья"
+      "creation_tool": "SVG",
+      "status": "Игровая фигурка без черт лица"
     },
     {
-      "id": "62",
-      "path": "медиа/2026-10-19/живой-космос/34-ekipazh-pyat-personazhey.png",
-      "title": "Ира — простой игровой образ",
+      "id": "168",
+      "path": "медиа/2026-10-20/скины/skin-ira.svg",
+      "title": "Ира — анонимный игровой скин",
       "object_ids": [
         "char-ira"
       ],
-      "added": "2026-10-19",
-      "sha256": "21ce089bc10375cff00fe20ff07e2ef98971795d0d57dbef26efb4ae764bb998",
+      "added": "2026-10-20",
+      "sha256": "348436b07264b5e3e050de67d14190eef256c340ef50557ba17123883b937f43",
       "kind": "illustration",
-      "display_crop": {
-        "cols": 5,
-        "rows": 1,
-        "col": 4,
-        "row": 0
-      },
-      "creation_tool": "image_gen",
-      "status": "Первый игровой концепт, внешность может уточнить семья"
+      "creation_tool": "SVG",
+      "status": "Игровая фигурка без черт лица"
+    },
+    {
+      "id": "169",
+      "path": "медиа/2026-10-20/скины/skin-tanya.svg",
+      "title": "Бабушка Таня — анонимный игровой скин",
+      "object_ids": [
+        "char-tanya"
+      ],
+      "added": "2026-10-20",
+      "sha256": "06f1a40dfa46f09b57e2362e488515802606f9663274c662e65c1187ccbf6887",
+      "kind": "illustration",
+      "creation_tool": "SVG",
+      "status": "Игровая фигурка без черт лица"
+    },
+    {
+      "id": "170",
+      "path": "медиа/2026-10-20/скины/skin-galya.svg",
+      "title": "Бабушка Галя — анонимный игровой скин",
+      "object_ids": [
+        "char-galya"
+      ],
+      "added": "2026-10-20",
+      "sha256": "211723eef9d572c4acd35f496d5dbf492595121ed79d717ff1c926a33b587157",
+      "kind": "illustration",
+      "creation_tool": "SVG",
+      "status": "Игровая фигурка без черт лица"
+    },
+    {
+      "id": "171",
+      "path": "медиа/2026-10-20/скины/skin-misha-pool.svg",
+      "title": "Дедушка Миша с бассейном — анонимный игровой скин",
+      "object_ids": [
+        "char-misha-pool"
+      ],
+      "added": "2026-10-20",
+      "sha256": "db7841fdc2a7a5681a4a7b8b5853c2c693bd805861e339c2584e94cfbc1c203d",
+      "kind": "illustration",
+      "creation_tool": "SVG",
+      "status": "Игровая фигурка без черт лица"
+    },
+    {
+      "id": "172",
+      "path": "медиа/2026-10-20/скины/skin-misha-galya.svg",
+      "title": "Дедушка Миша с бабушкой Галей — анонимный игровой скин",
+      "object_ids": [
+        "char-misha-galya"
+      ],
+      "added": "2026-10-20",
+      "sha256": "ca09a571cc724d249d18adcde7a14dc6e515421d2403be76d487b8bcb01d5336",
+      "kind": "illustration",
+      "creation_tool": "SVG",
+      "status": "Игровая фигурка без черт лица"
+    },
+    {
+      "id": "173",
+      "path": "медиа/2026-10-20/скины/skin-levka.svg",
+      "title": "Лёвка — анонимный игровой скин",
+      "object_ids": [
+        "char-levka"
+      ],
+      "added": "2026-10-20",
+      "sha256": "a9656d990353ac2e58c9a607a81391794dee9551ba1f1bcec86b51d77268fc39",
+      "kind": "illustration",
+      "creation_tool": "SVG",
+      "status": "Игровая фигурка без черт лица"
+    },
+    {
+      "id": "174",
+      "path": "медиа/2026-10-20/скины/skin-anya.svg",
+      "title": "Аня Менделеева — анонимный игровой скин",
+      "object_ids": [
+        "char-anya"
+      ],
+      "added": "2026-10-20",
+      "sha256": "9e0a33fb749ad6906dc906288e9c353701c3d26028b365e003cfc46a1b584479",
+      "kind": "illustration",
+      "creation_tool": "SVG",
+      "status": "Игровая фигурка без черт лица"
+    },
+    {
+      "id": "175",
+      "path": "медиа/2026-10-20/скины/skin-artem.svg",
+      "title": "Артём Котов — анонимный игровой скин",
+      "object_ids": [
+        "char-artem"
+      ],
+      "added": "2026-10-20",
+      "sha256": "829da61b97640e10b107f30b80032da939e3fab3cd0885ca9c9d9dd320e06667",
+      "kind": "illustration",
+      "creation_tool": "SVG",
+      "status": "Игровая фигурка без черт лица"
+    },
+    {
+      "id": "176",
+      "path": "медиа/2026-10-20/скины/skin-nadezhda.svg",
+      "title": "Надежда Менделеева — анонимный игровой скин",
+      "object_ids": [
+        "char-nadezhda"
+      ],
+      "added": "2026-10-20",
+      "sha256": "3904b86e886d14421e9a06bbb257a790dfedec69f2e3c659d1314f460ef7f21f",
+      "kind": "illustration",
+      "creation_tool": "SVG",
+      "status": "Игровая фигурка без черт лица"
+    },
+    {
+      "id": "177",
+      "path": "медиа/2026-10-20/скины/skin-ariel.svg",
+      "title": "Ариэль — анонимный игровой скин",
+      "object_ids": [
+        "char-ariel"
+      ],
+      "added": "2026-10-20",
+      "sha256": "aaf21183b3dfff179ea5e87200e9a3e924f108e6cc2ecf194351b5bcbeb6346e",
+      "kind": "illustration",
+      "creation_tool": "SVG",
+      "status": "Игровая фигурка без черт лица"
+    },
+    {
+      "id": "178",
+      "path": "медиа/2026-10-20/скины/skin-ulka.svg",
+      "title": "Улька — анонимный игровой скин",
+      "object_ids": [
+        "char-ulka"
+      ],
+      "added": "2026-10-20",
+      "sha256": "d106690609c241bdb8ddfbcc51ec1567f47cd1c73531b24ce93958df6b845a16",
+      "kind": "illustration",
+      "creation_tool": "SVG",
+      "status": "Игровая фигурка без черт лица"
+    },
+    {
+      "id": "179",
+      "path": "медиа/2026-10-20/скины/skin-lavrik.svg",
+      "title": "Лаврик — анонимный игровой скин",
+      "object_ids": [
+        "char-lavrik"
+      ],
+      "added": "2026-10-20",
+      "sha256": "2de6ea1389d2ebbe5a278ab944a32d5bae34f7aa3f8dd919c9a9b9aadad8feb8",
+      "kind": "illustration",
+      "creation_tool": "SVG",
+      "status": "Игровая фигурка без черт лица"
+    },
+    {
+      "id": "180",
+      "path": "медиа/2026-10-20/скины/skin-manya.svg",
+      "title": "Маня — анонимный игровой скин",
+      "object_ids": [
+        "char-manya"
+      ],
+      "added": "2026-10-20",
+      "sha256": "4bd0e08610087aa3523524e4eb6b8ba2d446910a3c3d9826e4cd958b22184ac9",
+      "kind": "illustration",
+      "creation_tool": "SVG",
+      "status": "Игровая фигурка без черт лица"
+    },
+    {
+      "id": "181",
+      "path": "медиа/2026-10-20/скины/skin-sanya.svg",
+      "title": "Саня — анонимный игровой скин",
+      "object_ids": [
+        "char-sanya"
+      ],
+      "added": "2026-10-20",
+      "sha256": "59b6e09e53c1655407132ba167b299b48bdf10118c695859d20eb1f514ad823d",
+      "kind": "illustration",
+      "creation_tool": "SVG",
+      "status": "Игровая фигурка без черт лица"
+    },
+    {
+      "id": "182",
+      "path": "медиа/2026-10-20/скины/skin-alpha-alien.svg",
+      "title": "Инопланетянин с Альфы — анонимный игровой скин",
+      "object_ids": [
+        "alien-alpha"
+      ],
+      "added": "2026-10-20",
+      "sha256": "602f162b971f5d58bc50501165cfe88aabe6dae986987f0190a22d52b93386a6",
+      "kind": "illustration",
+      "creation_tool": "SVG",
+      "status": "Игровая фигурка без черт лица"
+    },
+    {
+      "id": "183",
+      "path": "медиа/2026-10-20/скины/skin-jupiter-alien.svg",
+      "title": "Инопланетянин с Юпитера — анонимный игровой скин",
+      "object_ids": [
+        "alien-jupiter"
+      ],
+      "added": "2026-10-20",
+      "sha256": "7beb9076e06edeb2dc0f924139e40494b526b6280847a906f948d478b47450ff",
+      "kind": "illustration",
+      "creation_tool": "SVG",
+      "status": "Игровая фигурка без черт лица"
+    },
+    {
+      "id": "184",
+      "path": "медиа/2026-10-20/скины/skin-mars-alien.svg",
+      "title": "Инопланетянин с Марса — анонимный игровой скин",
+      "object_ids": [
+        "alien-mars"
+      ],
+      "added": "2026-10-20",
+      "sha256": "205f07a9a7fc62bcb3fb3db2c3e1aaf8eaef28484cb0fb41c769f62254c2b9a5",
+      "kind": "illustration",
+      "creation_tool": "SVG",
+      "status": "Игровая фигурка без черт лица"
+    },
+    {
+      "id": "185",
+      "path": "медиа/2026-10-20/скины/vehicle-mini-bmw.svg",
+      "title": "mini-bmw — игровой транспорт",
+      "object_ids": [
+        "mini-bmw"
+      ],
+      "added": "2026-10-20",
+      "sha256": "d00a9240aeb038b9b874c83760a794d610e069468ff9056f189e83d87d531a70",
+      "kind": "illustration",
+      "creation_tool": "SVG",
+      "status": "Простой игровой значок транспорта"
+    },
+    {
+      "id": "186",
+      "path": "медиа/2026-10-20/скины/vehicle-unicorn.svg",
+      "title": "unicorn — игровой транспорт",
+      "object_ids": [
+        "unicorn"
+      ],
+      "added": "2026-10-20",
+      "sha256": "9439ffa24770dbb1359a0096f0727812988cea72d8d170a151547c5df7c9efc1",
+      "kind": "illustration",
+      "creation_tool": "SVG",
+      "status": "Простой игровой значок транспорта"
+    },
+    {
+      "id": "187",
+      "path": "медиа/2026-10-20/скины/vehicle-mini-house.svg",
+      "title": "mini-house — игровой транспорт",
+      "object_ids": [
+        "flying-house"
+      ],
+      "added": "2026-10-20",
+      "sha256": "4db6f0caefe112f92b04db6d87fe8dd90b94beb9173abc5ef40518fbc69fddf7",
+      "kind": "illustration",
+      "creation_tool": "SVG",
+      "status": "Простой игровой значок транспорта"
+    },
+    {
+      "id": "188",
+      "path": "медиа/2026-10-20/скины/vehicle-snowflake.svg",
+      "title": "snowflake — игровой транспорт",
+      "object_ids": [
+        "vasya-plane"
+      ],
+      "added": "2026-10-20",
+      "sha256": "f8b9b9421c1f45afc77899ba38652a3e6e02af9debbfbabac474747a5101ff93",
+      "kind": "illustration",
+      "creation_tool": "SVG",
+      "status": "Простой игровой значок транспорта"
+    },
+    {
+      "id": "189",
+      "path": "медиа/2026-10-20/скины/vehicle-cloud-ray.svg",
+      "title": "cloud-ray — игровой транспорт",
+      "object_ids": [
+        "cloud-ray"
+      ],
+      "added": "2026-10-20",
+      "sha256": "e463114335681f0a075ca74f8863f16e3835ee76ced61f204db5dfc1a00b5d8a",
+      "kind": "illustration",
+      "creation_tool": "SVG",
+      "status": "Простой игровой значок транспорта"
+    },
+    {
+      "id": "190",
+      "path": "медиа/2026-10-20/скины/vehicle-comet-scooter.svg",
+      "title": "comet-scooter — игровой транспорт",
+      "object_ids": [
+        "comet-scooter"
+      ],
+      "added": "2026-10-20",
+      "sha256": "9d3fc3a6ef146b40f4453a84dd47c9772f6a70789205a46014bfc5c9289518fc",
+      "kind": "illustration",
+      "creation_tool": "SVG",
+      "status": "Простой игровой значок транспорта"
+    },
+    {
+      "id": "191",
+      "path": "медиа/2026-10-20/скины/vehicle-bubble-sail.svg",
+      "title": "bubble-sail — игровой транспорт",
+      "object_ids": [
+        "bubble-sail"
+      ],
+      "added": "2026-10-20",
+      "sha256": "53d623f22bffa0312cff82ac5edeee9cda0597ba971b8e21b6631e1c31aba472",
+      "kind": "illustration",
+      "creation_tool": "SVG",
+      "status": "Простой игровой значок транспорта"
     }
   ],
   "notes": [
